@@ -14,7 +14,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
         <h2>Frontend Developer</h2><br>
         <h1>Jonas Mahlburg</h1>
     </div>
-    <img class="profilePicture" src="" alt="Hier könnte ihre Werbung stehen">
+    <img class="profilePicture" src= "../../assets/img/IMG_1681.jpeg" alt="Hier könnte ihre Werbung stehen">
 </section>`,
     styleUrls: ['./landingPage.component.scss']
 })

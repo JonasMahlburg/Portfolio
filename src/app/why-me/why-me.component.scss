@@ -1,0 +1,48 @@
+@import '../../styles.scss';
+
+*{
+    color: #00F4BF;
+}
+
+section{
+    display: flex;
+    align-items: center;
+}
+
+.myPic{
+    width: 488px;
+    height: 452px;
+}
+
+.locationPointer{
+    background: inherit;
+}
+
+.whyMe{
+    width: 729px;
+    height: 452px;
+}
+
+.toContactBtn {
+    background-color: #00F4BF;
+        color: #0A032C;
+        border: inherit;
+        cursor: pointer;
+        width: 169px;
+        height: 52px;
+        padding: 15px 30px 15px 30px;
+        gap: 10px;
+        opacity: 0px;
+
+}
+
+.toContactBtnDiv{
+    width: 521px;
+    height: 52px;
+    padding: 0px 0px 0px 352px;
+    gap: 10px;
+}
+
+.bigRed{
+    @include bigRed();
+}

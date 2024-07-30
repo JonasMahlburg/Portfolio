@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
@@ -11,6 +9,10 @@
 *{
     background-color: #0A032C;
     margin: 0;
-    height: 100vh;
     font-family: 'Roboto';
+}
+
+@mixin bigRed(){
+    color: #E15544;
+    font-size: 54px;
 }

@@ -1,9 +1,9 @@
 *{
-    height: 100vh;
-    width: 1900px
+    max-width: 1900px;
 }
 section{
     display:flex;
+    margin-top: 92px;
 }
 
 .leadToContact{
@@ -15,9 +15,18 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover{
+        color: #00F4BF;
+        cursor: pointer;
+    }
 }
 
 .title{
     color: #00F4BF;
 
+}
+
+.profilePicture{
+    width: 539px;
+    height: 554px;
 }

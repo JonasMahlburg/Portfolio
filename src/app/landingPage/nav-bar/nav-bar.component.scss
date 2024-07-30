@@ -1,7 +1,35 @@
 *{
-    background-color: purple;
+    color: #E15544;
+    height: 92px;
+  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 a{
-    color: #E15544;
+  
+    text-decoration: none;
+
+    &:hover{
+        color:#00F4BF;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+button{
+border: inherit;
+
 }

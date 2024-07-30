@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { landingPageComponent } from "./landingPage/landingPage.component";
-import { NavBarComponent } from "./landingPage/nav-bar/nav-bar.component";
+import { WhyMeComponent } from './why-me/why-me.component';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, landingPageComponent, NavBarComponent],
+  imports: [RouterOutlet, landingPageComponent, WhyMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,23 @@
+*{
+    height: 100vh;
+    width: 1900px
+}
+section{
+    display:flex;
+}
+
+.leadToContact{
+    border: 2px solid #00F4BF;
+    rotate: -90deg;
+    height: 52px;
+    width: 169px;
+    color: #E15544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #00F4BF;
+
+}

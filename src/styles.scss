@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'); 
+}/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+
+*{
+    background-color: #0A032C;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto';
+}

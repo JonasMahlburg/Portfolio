@@ -1,38 +1,74 @@
-*{
-    max-width: 1900px;
+* {
+  max-width: 1900px;
 }
-section{
-    display:flex;
-    margin-top: 92px;
-}
-
-.leadToContact{
-    border: 2px solid #00F4BF;
-    rotate: -90deg;
-    height: 52px;
-    width: 169px;
-    color: #E15544;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover{
-        color: #00F4BF;
-        cursor: pointer;
-    }
+section {
+  display: flex;
+  margin-top: 92px;
+  height: 100vh;
 }
 
-.title{
-    color: #00F4BF;
-    bottom: 0;
+.leadToContact {
+  border: 2px solid #00f4bf;
+  rotate: -90deg;
+  height: 52px;
+  width: 169px;
+  color: #e15544;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: #00f4bf;
+    cursor: pointer;
+  }
 }
 
-.profilePicture{
-    width: 539px;
-    height: 554px;
-    object-fit: cover;
+.title {
+  color: #00f4bf;
+  position: absolute;
+  width: 808px;
+  height: 142px;
+  top: 412px;
+  left: 50px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
-.text-Part{
-display: flex;
-flex-direction: column;
+.profilePicture {
+  width: 539px;
+  height: 554px;
+  object-fit: cover;
+  left: 769px;
+  position: relative;
+  right: 0;
+}
+
+.text-Part {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobTitle {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 64.8px;
+    margin: 0;
+}
+
+.myName {
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 98.4px;
+    margin: 0;
+}
+
+.arrowDown {
+    width: 22px;
+    height: 50px;
+    top: 306px;
+    left: 669px;
+    gap: 0px;
+    opacity: 0px;
+    rotate: 180 deg;
+
 }

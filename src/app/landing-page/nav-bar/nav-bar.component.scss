@@ -2,16 +2,36 @@
 @import '../../../styles.scss';
 *{
     color: #E15544;
-  
-  
 }
 
-nav{
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 92px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    padding: 24px, 140px, 24px, 140px; /* Normalerweise sollte der Wert zwischen 0 und 1 liegen */
+
+    background: linear-gradient(
+        to bottom, 
+        rgba(11, 4, 45, 1), /* weniger transparent oben */
+        rgba(11, 4, 45, 0.2)  /* mehr transparent unten */
+    );
+    
+    /* Optional: Weitere Stile für die Bar */
+    z-index: 1000; /* Sicherstellen, dass die Navbar über anderen Elementen liegt */
 }
+
 
 .navigation{
     display: flex;

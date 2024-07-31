@@ -1,0 +1,22 @@
+@import '../../styles.scss';
+
+h2{
+    @include bigRed();
+}
+
+.skillTree{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+image{
+    width: Hug (88px)px;
+height: Hug (100px)px;
+left: 200.5px;
+gap: 0px;
+opacity: 0px;
+
+}
+

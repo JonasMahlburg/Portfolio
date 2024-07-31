@@ -1,0 +1,65 @@
+footer {
+    width: 1439px;
+    height: 196px;
+    top: 4184px;
+    left: 1px;
+    padding: 0px 0px 65px 0px;
+    gap: 16px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 129px;
+height: 81px;
+padding: 4px 0px 6px 0px;
+}
+
+.linkSection {
+    width: 154px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.privacy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#gitHub {
+    width: 30px;
+    height: 29.26px;
+    top: 4px;
+    left: -0.5px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#mail {
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    left: 62.5px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    left: 123.5px;
+    gap: 0px;
+    opacity: 0px;
+}

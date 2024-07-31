@@ -23,10 +23,16 @@ section{
 
 .title{
     color: #00F4BF;
-
+    bottom: 0;
 }
 
 .profilePicture{
     width: 539px;
     height: 554px;
+    object-fit: cover;
+}
+
+.text-Part{
+display: flex;
+flex-direction: column;
 }

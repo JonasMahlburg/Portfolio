@@ -1,3 +1,5 @@
+
+@import '../../../styles.scss';
 *{
     color: #E15544;
   
@@ -32,4 +34,8 @@ a{
 button{
 border: inherit;
 
+}
+
+.name{
+    @include bigRed();
 }

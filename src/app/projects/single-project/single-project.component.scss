@@ -1,0 +1,32 @@
+img {
+    width: 588px;
+    height: 371px;
+}
+
+.singleProject{
+    color:#00F4BF;
+    display: flex;
+}
+
+.singleProjectReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.skills{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+

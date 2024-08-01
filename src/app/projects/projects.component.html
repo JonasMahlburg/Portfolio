@@ -1,1 +1,9 @@
-<p>projects works!</p>
+<section>
+    <h2>My Projects</h2>
+
+    @for (project of projects; track $index) {
+            <app-single-project [singleProject]="project"></app-single-project>  
+    }
+</section>
+
+

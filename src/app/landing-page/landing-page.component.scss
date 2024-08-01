@@ -9,9 +9,15 @@ section {
 
 .leadToContact {
   border: 2px solid #00f4bf;
-  rotate: -90deg;
-  height: 52px;
   width: 169px;
+  height: 52px;
+  top: 286px;
+  left: 50px;
+  gap: 10px;
+  opacity: 0px;
+  rotate: -90deg;
+  position: relative;
+  
   color: #e15544;
   display: flex;
   justify-content: center;
@@ -45,7 +51,6 @@ section {
 
 .text-Part {
   display: flex;
-  flex-direction: column;
 }
 
 .jobTitle {
@@ -68,7 +73,6 @@ section {
     top: 306px;
     left: 669px;
     gap: 0px;
-    opacity: 0px;
-    rotate: 180 deg;
-
+    position: relative;
+    display: flex;
 }

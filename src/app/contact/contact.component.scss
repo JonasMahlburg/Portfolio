@@ -1,2 +1,106 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
+
+
+section {
+  color: #00f4bf;
+  @include d-flex();
+  flex-direction: column;
+}
+
+.headline {
+  @include d-flex();
+  @include bigRed();
+
+  img {
+    rotate: -60deg;
+    transform: scaleX(-1);
+  }
+}
+
+.information {
+  @include d-flex();
+
+  .textPart {
+    text-wrap: wrap;
+    width: 504px;
+    height: 73px;
+    top: 85px;
+    left: 2px;
+  }
+
+  .email {
+    background-image: url("../../assets/img/contact-img/icon\ _email_.png");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    width: 412px;
+    height: 30px;
+    top: 85px;
+    left: 555px;
+    background-size: contain;
+    @include d-flex($js: unset);
+  }
+
+  .tel {
+    background-image: url("../../assets/img/contact-img/icon\ _phone_.png");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    object-fit: cover;
+    width: 379px;
+    height: 33px;
+    top: 129px;
+    left: 557px;
+    gap: 0px;
+    opacity: 0px;
+    background-size: contain;
+    @include d-flex($js: unset);
+  }
+}
+form {
+  @include d-flex();
+
+  .smallInput {
+    @include d-flex();
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    background-color: inherit;
+    border: 1px, solid, #00f4bf;
+    width: 507px;
+    height: 56px;
+    gap: 0px;
+    color: #00f4bf;
+  }
+
+  textarea {
+    background-color: inherit;
+    border: 1px, solid, #00f4bf;
+    color: #00f4bf;
+    width: 637px;
+    height: 144px;
+  }
+
+  input[type="submit"] {
+    width: 104px;
+    height: 52px;
+    top: 22px;
+    left: 1081px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    border: 2px solid gray;
+    background-color: inherit;
+    color: gray;
+  }
+
+  ::placeholder {
+    color: #02f4bf;
+    opacity: 60;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.inputArea {
+  @include d-flex();
+}

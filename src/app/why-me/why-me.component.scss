@@ -9,18 +9,37 @@ section{
     align-items: center;
 }
 
+.presentation{
+   text-align: right;
+  }
+
 .myPic{
     width: 488px;
     height: 452px;
+    object-fit: cover;
 }
 
-.locationPointer{
-    background: inherit;
+.locationPointer {
+    background-image: url('../../assets/img/Vector.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 235px;
+    height: 57px;
+    gap: 10px;
+    opacity: 0px;
+    @include d-flex();
 }
 
+.myClass{
+    @include bigRed();
+}
 .whyMe{
     width: 729px;
     height: 452px;
+}
+
+.myConditions{
+    display: flex;
 }
 
 .toContactBtn {

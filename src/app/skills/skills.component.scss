@@ -1,5 +1,14 @@
 @import '../../styles.scss';
 
+section{
+    width: 1439px;
+height: 423px;
+top: 1310px;
+left: 1px;
+
+
+}
+
 h2{
     @include bigRed();
 }

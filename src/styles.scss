@@ -17,3 +17,10 @@ body{
     color: #E15544;
     font-size: 54px;
 }
+
+@mixin d-flex($js: center, $ai: center, $g: 0px) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+    gap: $g;
+  }

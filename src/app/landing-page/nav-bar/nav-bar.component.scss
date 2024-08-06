@@ -53,7 +53,12 @@ a{
 
 button{
 border: inherit;
-
+background-image: url('../../../assets/img/buttons/language-default.png');
+background-repeat: no-repeat;
+background-size: contain;
+width: 62px;
+height: 25px;
+background-color: inherit;
 }
 
 .name{

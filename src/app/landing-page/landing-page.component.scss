@@ -3,8 +3,13 @@
 }
 section {
   display: flex;
-  margin-top: 92px;
+  width: 1337px;
   height: 100vh;
+  top: 2px;
+  left: -53px;
+  gap: 0px;
+position: relative;
+  
 }
 
 .leadToContact {
@@ -17,6 +22,7 @@ section {
   opacity: 0px;
   rotate: -90deg;
   position: relative;
+  //rotate: -180deg; writing-mode: vertical-rl;
   
   color: #e15544;
   display: flex;
@@ -30,7 +36,7 @@ section {
 
 .title {
   color: #00f4bf;
-  position: absolute;
+  position: relative;
   width: 808px;
   height: 142px;
   top: 412px;
@@ -51,6 +57,7 @@ section {
 
 .text-Part {
   display: flex;
+  flex-direction: column;
 }
 
 .jobTitle {
@@ -75,4 +82,23 @@ section {
     gap: 0px;
     position: relative;
     display: flex;
+    background-image: url('../../assets/img/Arrow down.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+  
+
+    &:hover{
+      background-image: url('../../assets/img/Arrow\ down=Hover.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 38px;
+        height: 68px;
+   
+      }
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

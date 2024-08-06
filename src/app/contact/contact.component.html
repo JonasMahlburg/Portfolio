@@ -1,1 +1,40 @@
-<p>contact works!</p>
+<section>
+    <div>
+        <h2>My Contact</h2>
+        <img src="../../assets/img/Arrow-curved.png" alt="">
+    </div>
+
+    <div class="information">
+        <div class="textPart">
+            <p>Still not sure if I am the right person for your projects? Contact Me so can I can ressaure you. Let us work together</p>
+        </div>
+        <div class="contactInfo">
+            <div class="email">Email: darrylmanga&#64;yahoo.com</div>
+            <div class="tel">Tel: 0176 123456</div>
+        </div>
+    </div>
+    <div class="container">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <label for="fname">Your Name</label>
+    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    @if(!name.valid && name.touched){
+        <span>Please tell me your name</span>
+    }
+
+    <label for="email">Your Email</label>
+    <input [(ngModel)]="contactData.email"  type="text" id="email" name="email" placeholder="Your Email adress.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+    @if(!message.valid && message.touched && !message.disabled){
+        <span>Please enter a Message</span>
+    }
+
+    <label for="subject">Subject</label>
+    <textarea #message="ngModel" [(ngModel)]="contactData.message"  id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+    @if(!message.valid && message.touched && !message.disabled){
+        <span>Please enter a Message</span>
+    }
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</section>

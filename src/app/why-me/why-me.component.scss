@@ -5,8 +5,8 @@
 }
 
 section{
-    display: flex;
-    align-items: center;
+@include d-flex();
+
 }
 
 .presentation{
@@ -30,8 +30,15 @@ section{
     @include d-flex();
 }
 
+.firstArrow{
+    margin-top: 60px;
+    margin-left: -53px;
+}
+
 .myClass{
     @include bigRed();
+    padding-right: 20px;
+    margin: 0;
 }
 .whyMe{
     width: 729px;
@@ -39,7 +46,28 @@ section{
 }
 
 .myConditions{
+    @include d-flex($ai: start);
+}
+
+.conditionMarkers{
     display: flex;
+    flex-direction: column;
+}
+
+.firstRow{
+    @include d-flex($js: start, $ai: start)
+
+}
+
+.secondRow{
+    @include d-flex();
+
+    .secondArrow{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        padding-top: 40px;
+        rotate: -45deg;
+    }
 }
 
 .toContactBtn {
@@ -58,8 +86,8 @@ section{
 .toContactBtnDiv{
     width: 521px;
     height: 52px;
-    padding: 0px 0px 0px 352px;
     gap: 10px;
+    @include d-flex($js: end)
 }
 
 .bigRed{

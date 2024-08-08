@@ -1,11 +1,12 @@
 @import '../../styles.scss';
 
 section{
-    width: 1439px;
-height: 423px;
+    width: 100%px;
+height: 50vh;
 top: 1310px;
 left: 1px;
-
+@include d-flex();
+flex-direction: column;
 
 }
 

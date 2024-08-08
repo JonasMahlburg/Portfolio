@@ -58,6 +58,7 @@ section {
 }
 form {
   @include d-flex();
+  flex-direction: column;
 
   .smallInput {
     @include d-flex();
@@ -79,6 +80,7 @@ form {
     color: #00f4bf;
     width: 637px;
     height: 144px;
+    gap: 40px;
   }
 
   input[type="submit"] {
@@ -102,5 +104,6 @@ form {
 }
 
 .inputArea {
-  @include d-flex();
+  @include d-flex($g: 40px);
+  ;
 }

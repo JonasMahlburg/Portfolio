@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 img {
     width: 588px;
     height: 371px;
@@ -5,7 +7,10 @@ img {
 
 .singleProject{
     color:#00F4BF;
-    display: flex;
+    @include d-flex();
+    height: 371px;
+    width: 1134px;
+    border: 1px solid yellow;
 }
 
 .singleProjectReverse{
@@ -28,5 +33,33 @@ img {
     font-weight: 400;
 }
 
+.play {
+    background-color: #00F4BF;
+    width: 158px;
+    height: 52px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    font-size: 18;
+    font-weight: 500;
+    text-decoration: none;
+    @include d-flex();
+}
+
+.gitHub {
+    width: 125px;
+    height: 52px;
+    @include d-flex();
+    color: #E15544;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border: 1px, solid, #00F4BF;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none
+}
+.linkSection{
+    @include d-flex();
+    gap: 24px;
+}
 
 

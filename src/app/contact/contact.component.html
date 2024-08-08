@@ -17,13 +17,13 @@
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="inputArea">
         <div class="smallInput">
-            <label for="fname">Your Name</label>
+           
             <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" placeholder="Your name.." required>
             @if(!name.valid && name.touched){
                 <span>Please tell me your name</span>
             }
         
-            <label for="email">Your Email</label>
+           
             <input [(ngModel)]="contactData.email"  type="text" id="email" name="email" placeholder="Your Email adress.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             @if(!message.valid && message.touched && !message.disabled){
                 <span>Please enter a Message</span>
@@ -45,5 +45,61 @@
   
 
   </form>
+
+
+  <!-- <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div class="inputArea">
+        <div class="smallInput">
+            <input
+                #name="ngModel"
+                [(ngModel)]="contactData.name"
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+                required
+                [ngClass]="{'invalid-input': !name.valid && name.touched}"
+            >
+            <div @if="!name.valid && name.touched" class="error-message">
+                Please tell me your name
+            </div>
+            
+            <input
+                #email="ngModel"
+                [(ngModel)]="contactData.email"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your Email address.."
+                required
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                [ngClass]="{'invalid-input': !email.valid && email.touched}"
+            >
+            <div *ngIf="!email.valid && email.touched" class="error-message">
+                Please enter a valid email address
+            </div>
+        </div>
+
+        <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height:200px"
+            required
+            [ngClass]="{'invalid-input': !message.valid && message.touched}"
+        ></textarea>
+        <div *ngIf="!message.valid && message.touched" class="error-message">
+            Please enter a message
+        </div>
+    </div>
+
+    <div class="submitArea">
+        <p class="policy">I've read the privacy policy and agree to the processing of my data as outlined.</p>
+        <input type="submit" value="Send">
+    </div>
+</form> -->
+
 </div>
 </section>

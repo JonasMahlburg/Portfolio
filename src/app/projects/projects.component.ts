@@ -46,21 +46,4 @@ export class ProjectsComponent {
     gitHub: "https://github.com/JonasMahlburg/El-Pollo-Loco",
     id: 3,
   }];
-
-  getProcessedProject(project: any, index: number): any {
-    if (index % 2 === 1) { // Check if index is odd (for every second element)
-      return this.mirrorProject(project);
-    }
-    return project;
-  }
-
-  mirrorProject(project: any): any {
-    // Logic to mirror the project object, e.g., reversing the title or description
-    return {
-      ...project,
-      title: project.title.split('').reverse().join(''), // Example of mirroring title
-      description: project.description.split('').reverse().join('') // Example of mirroring description
-    };
-  }
-
 }

@@ -5,11 +5,16 @@ img {
     height: 371px;
 }
 
+.even {  flex-direction: row-reverse; }
+.odd { flex-direction: row; }
+
 .singleProject{
     color:#00F4BF;
     @include d-flex();
     height: 371px;
     width: 1134px;
+
+
     border: 1px solid yellow;
 }
 

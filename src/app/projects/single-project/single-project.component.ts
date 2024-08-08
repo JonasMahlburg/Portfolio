@@ -1,9 +1,10 @@
+import { NgClass } from '@angular/common';
 import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-single-project',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
@@ -15,16 +16,10 @@ export class SingleProjectComponent {
   description: string;
   play: string;
   gitHub: string;
-
+id: number;
 }
 
-// index= this.singleProject.id;
-
-constructor(){
-  // if (this.index  % 2 == 0) {
-  //   document.getElementById('this.singleProject.id')?.classList.add('singleProjectReverse');
-  // }
 }
  
 
-}
+

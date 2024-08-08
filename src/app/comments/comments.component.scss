@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+
+section{
+    @include d-flex($fd: column, );
+ 
+    h2{
+        @include bigRed($fs: 24px, $fw: 700);
+        margin-bottom: 20px;
+        padding-right: 25%;
+    }
+
+    .commentSection{
+        @include d-flex();
+        width: 1440px;
+height: 307px;
+padding: 0px 0px 0px 129px;
+gap: 32px;
+margin-top: 30px;
+
+.commentArrow{
+    @include d-flex($ai: start);
+    height: 307px;
+}
+      
+    }
+}

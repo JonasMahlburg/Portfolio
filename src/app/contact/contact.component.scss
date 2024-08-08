@@ -57,12 +57,13 @@ section {
   }
 }
 form {
-  @include d-flex();
-  flex-direction: column;
+  @include d-flex($g: 30px, $fd: column);
+  
 
   .smallInput {
-    @include d-flex();
-    flex-direction: column;
+    @include d-flex($g: 30px, $fd: column);
+   
+ 
   }
 
   input[type="text"] {
@@ -73,6 +74,23 @@ form {
     gap: 0px;
     color: #00f4bf;
   }
+
+  // input[type="text"]:invalid{
+  //   border: 1px solid red;
+
+  // }
+
+  input[type="text"].invalid-input,
+textarea.invalid-input {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 
   textarea {
     background-color: inherit;
@@ -106,4 +124,15 @@ form {
 .inputArea {
   @include d-flex($g: 40px);
   ;
+}
+
+.policy{
+  background-image: url('../../assets/img/Privacy-Policy/check_box-default.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+
+  &:hover{
+    background-image: url('../../assets/img/Privacy-Policy/Check_box-hover.png');
+  }
 }

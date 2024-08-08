@@ -1,1 +1,14 @@
-<p>comments works!</p>
+<section>
+    <h2>need a team-Player? Here is what others say about me</h2>
+
+    <div class="commentSection">
+        <div class="commentArrow">
+            <img src="../../assets/img/Reference_Arrow.png" alt="">
+        </div>
+     
+        @for (comment of comments; track $index) {
+            <app-single-comment [singleComment]="comment"></app-single-comment>
+           }
+    </div>
+
+</section>

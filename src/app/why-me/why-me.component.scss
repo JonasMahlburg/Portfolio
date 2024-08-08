@@ -26,8 +26,15 @@ section{
     width: 235px;
     height: 57px;
     gap: 10px;
-    opacity: 0px;
     @include d-flex();
+    animation-duration: 1750ms;
+
+    &:hover{
+        background-image: url('../../assets/img/Location_Hover_Circle.png'), url('../../assets/img/Location_Hover_Point.png');
+        background-position: 3% 95%, top left;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
 }
 
 .firstArrow{
@@ -61,6 +68,11 @@ section{
 
 .secondRow{
     @include d-flex();
+    transition: background-image 1s;
+
+    img:hover &{
+        background-image: url('../../assets/img/Remote\ work\ Web\ hover.png');
+    }
 
     .secondArrow{
         -webkit-transform: scaleX(-1);
@@ -72,6 +84,8 @@ section{
 
 .toContactBtn {
     background-color: #00F4BF;
+    font-size: 18px;
+    font-weight: 500;
         color: #0A032C;
         border: inherit;
         cursor: pointer;
@@ -80,6 +94,10 @@ section{
         padding: 15px 30px 15px 30px;
         gap: 10px;
         opacity: 0px;
+
+        &:hover{
+            color:#E15544;
+        }
 
 }
 

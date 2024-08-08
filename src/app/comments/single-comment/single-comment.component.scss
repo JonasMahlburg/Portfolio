@@ -1,0 +1,37 @@
+@import '../../../styles.scss';
+
+.comment {
+    width: 297px;
+    height: 350px;
+    gap: 32px;
+    border: 2px solid #E15544;
+    border-radius: 15px;
+@include d-flex($fd: column);
+    color: #00f4bf;
+
+    .titleSection {
+        z-index: 50;
+        position: sticky;
+        width: 297px;
+        height: 53px;
+        gap: 8px;
+
+        .name {
+            margin-top:0;
+            color: #E15544;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    .comment {
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+    }
+}

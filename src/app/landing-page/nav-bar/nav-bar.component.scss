@@ -10,17 +10,22 @@
     object-fit: contain;
 }
 
+.logoMobile {
+    display: none;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include d-flex($js: space-between);
     height: 92px;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    opacity: 1;
-    padding: 24px, 140px, 24px, 140px; /* Normalerweise sollte der Wert zwischen 0 und 1 liegen */
+    width: 100%;
+
 
     background: linear-gradient(
         to bottom, 
@@ -34,9 +39,7 @@ nav {
 
 
 .navigation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include d-flex();
     gap: 30px;
 }
 
@@ -63,4 +66,41 @@ background-color: inherit;
 
 .name{
     @include bigRed();
+}
+
+.burgerMenu{
+    background-image: url('../../../assets/img/burger\ menu.png');
+    background-repeat: no-repeat;
+    @include d-flex($fd: column, $d: none);
+    color: #E15544;
+    width: 44px;
+    height: 35px;
+
+}
+
+.popUp{
+    @include d-flex($fd: column, $d: none);
+}
+
+//----------------------Media Query-----------------------------------------------
+
+@media(max-width: 590px){
+nav{
+    justify-content: flex-end;
+}
+
+    button{
+    display: none;
+}
+.navigation{
+    display: none;
+}
+.burgerMenu{
+    display:flex;
+    
+}
+.logoMobile{
+    display: flex;
+}
+
 }

@@ -5,11 +5,9 @@
 }
 section {
   display: flex;
-
+justify-content: center;
   width: 100%;
-  height: 100vh;
-  top: 2px;
-  left: -53px;
+  height: 90vh;
   gap: 0px;
   position: relative;
 }
@@ -17,42 +15,24 @@ section {
 
 
 .leadToContact {
+  @include d-flex();
   border: 2px solid #00f4bf;
   width: 169px;
   height: 52px;
-  top: 286px;
-  left: 50px;
-  gap: 10px;
-  opacity: 0px;
   rotate: -90deg;
   position: relative;
-
-
   color: #e15544;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   &:hover {
     color: #00f4bf;
     cursor: pointer;
   }
 }
 
-.title {
-  color: #00f4bf;
-  position: relative;
-  width: 808px;
-  height: 142px;
-  top: 412px;
-  left: 100px;
-  gap: 8px;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .profilePicture {
-  width: 539px;
-  height: 554px;
+  width: 30%;
+  height: 60%;
   object-fit: cover;
  
   box-shadow: 10px 10px 5px #00f4bf;
@@ -60,8 +40,23 @@ section {
 }
 
 .text-Part {
+ @include d-flex($fd: column, $js: space-evenly);
+
+ .buttons {
+  @include d-flex($js: space-between);
+  width: 100%;
+}
+
+.title {
+  color: #00f4bf;
+  position: relative;
+  width: 100%;
+  height: 142px;
+  gap: 8px;
   display: flex;
   flex-direction: column;
+}
+
 }
 
 .jobTitle {
@@ -81,28 +76,72 @@ section {
 .arrowDown {
   width: 22px;
   height: 50px;
-  top: 306px;
+  // top: 306px;
   gap: 0px;
   position: relative;
   display: flex;
   background-image: url("../../assets/img/Arrow down.png");
   background-repeat: no-repeat;
   background-size: auto;
+  cursor: pointer;
 
   &:hover {
     background-image: url("../../assets/img/Arrow\ down=Hover.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    width: 38px;
-    height: 68px;
+    background-size: contain;
+    width: 22px;
+    height: 50px;
   }
 }
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 
 //-- Media Querry ------------------------------------------//
+
+@media(max-width: 880px){
+section{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.text-Part{
+  .buttons{
+    display: none;
+  }
+  .title{
+    text-align: center;
+    gap: 0;
+  }
+}
+.profilePicture{
+  width: 60%;
+  height: 70%;
+  margin-bottom: 20px;
+}
+
+}
+
+@media(max-width: 730px){
+  .profilePicture{
+    width: 80%;
+   
+  }
+}
+
+@media(max-width: 590px){
+.myName{
+  font-size: 60px;
+}
+.jobTitle{
+  font-size: 40px;
+}
+}
+
+@media(max-width: 430px){
+  .myName{
+    font-size: 40px;
+  }
+  .jobTitle{
+    font-size: 30px;
+  }
+}

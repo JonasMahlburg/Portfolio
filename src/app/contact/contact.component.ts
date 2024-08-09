@@ -52,4 +52,30 @@ export class ContactComponent {
       ngForm.resetForm();
     }
   }
+  updatePlaceholder(input: any) {
+    const inputname = document.getElementById('fname') as HTMLInputElement;
+    const inputmail = document.getElementById('email') as HTMLInputElement;
+    const inputmessage = document.getElementById('message') as HTMLInputElement;
+
+    if (!input.valid && input.touched) {
+      inputname.placeholder = "Please tell me your name";
+      inputname.value = "";
+    } else {
+      inputname.placeholder = "Your name...";
+    }
+
+    if (!input.valid && input.touched) {
+      inputmail.placeholder = "Please tell me your email adress";
+      inputmail.value = "";
+    } else {
+      inputmail.placeholder = "Your email adress";
+    }
+
+    if (!input.valid && input.touched) {
+      inputmessage.placeholder = "Please right something";
+      inputmessage.value = "";
+    } else {
+      inputmessage.placeholder = "Your message";
+    }
+  }
 }

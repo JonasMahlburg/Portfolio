@@ -48,6 +48,11 @@ img {
     font-weight: 500;
     text-decoration: none;
     @include d-flex();
+    cursor: pointer;
+
+    &:hover{
+        color: #E15544;
+    }
 }
 
 .gitHub {
@@ -60,7 +65,12 @@ img {
     border: 1px, solid, #00F4BF;
     font-size: 18px;
     font-weight: 500;
-    text-decoration: none
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        color: #00F4BF
+    }
 }
 .linkSection{
     @include d-flex();

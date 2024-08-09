@@ -1,12 +1,10 @@
 @import '../../styles.scss';
 
 section{
-    width: 100%px;
-height: 50vh;
-top: 1310px;
-left: 1px;
-@include d-flex();
-flex-direction: column;
+    width: 100%;
+height: 30vh;
+@include d-flex($fd: column);
+
 
 }
 
@@ -15,18 +13,60 @@ h2{
 }
 
 .skillTree{
-    display: flex;
-    align-items: center;
+    @include d-flex();
     gap: 30px;
     flex-wrap: wrap;
+
+    img{
+        width: 88px;
+    height: 100px;
+    }
 }
 
-image{
-    width: Hug (88px)px;
-height: Hug (100px)px;
-left: 200.5px;
-gap: 0px;
-opacity: 0px;
+.skillTreeMobile{
+    @include d-flex($d: none);
+    gap: 30px;
+    flex-wrap: wrap;
 
+    .mobileImg{
+        width: 45px;
+        height: 45px;
+    }
 }
 
+.mobileMessage{
+    @include d-flex($fd: column, $d: none, $g: 10px);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+
+//-----------------------------Media Query---------------------
+
+@media(max-width: 1080px){
+    section{
+        height: 60vh;
+    }
+}
+
+@media(max-width: 580px){
+    .skillTree{
+        display: none;
+    }
+
+    .skillTreeMobile{
+        display: flex;
+    }
+
+    .mobileMessage{
+        display: flex;
+    }
+}
+
+@media(max-width: 360px){
+    section{
+        height: 80vh;
+    }
+}

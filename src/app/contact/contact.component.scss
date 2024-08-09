@@ -136,3 +136,23 @@ textarea.invalid-input {
     background-image: url('../../assets/img/Privacy-Policy/Check_box-hover.png');
   }
 }
+
+.redBorder{
+  border-color: red;
+background-image: url('../../assets/img/Privacy-Policy/done_error.png');
+background-repeat: no-repeat;
+background-position: right 16px top 8px;
+
+}
+
+.greenBorder{
+  border-color: green;
+  background-image: url('../../assets/img/Privacy-Policy/done_correct.png');
+  background-repeat: no-repeat;
+  background-position: right 16px top 8px;
+}
+
+.errorSpan{
+  color: red;
+  position: absolute;
+}

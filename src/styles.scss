@@ -11,6 +11,7 @@ body{
     background-image: linear-gradient(rgba(11,4,45,1), rgba(29,12,123,1));
     margin: 0;
     font-family: 'Roboto';
+    color: #00f4bf;
     width: 100%;
 }
 
@@ -20,8 +21,8 @@ body{
     font-weight: $fw;
 }
 
-@mixin d-flex($js: center, $ai: center, $g: 0px, $fd: row) {
-    display: flex;
+@mixin d-flex($d: flex, $js: center, $ai: center, $g: 0px, $fd: row) {
+    display: $d;
     justify-content: $js;
     align-items: $ai;
     gap: $g;

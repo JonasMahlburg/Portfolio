@@ -6,6 +6,8 @@
 
 section{
 @include d-flex();
+height: 70vh;
+width: 100%;
 
 }
 
@@ -14,9 +16,9 @@ section{
   }
 
 .myPic{
-    width: 488px;
-    height: 452px;
-    object-fit: cover;
+    width: 45%;
+    height: 80%;
+    object-fit: contain;
 }
 
 .locationPointer {
@@ -27,8 +29,7 @@ section{
     height: 57px;
     gap: 10px;
     @include d-flex();
-    animation-duration: 1750ms;
-
+  
     &:hover{
         background-image: url('../../assets/img/Location_Hover_Circle.png'), url('../../assets/img/Location_Hover_Point.png');
         background-position: 3% 95%, top left;
@@ -37,10 +38,7 @@ section{
     }
 }
 
-.firstArrow{
-    margin-top: 60px;
-    margin-left: -53px;
-}
+
 
 .myClass{
     @include bigRed();
@@ -48,8 +46,9 @@ section{
     margin: 0;
 }
 .whyMe{
-    width: 729px;
-    height: 452px;
+    width: 55%;
+    height: 80%;
+    text-wrap: wrap;
 }
 
 .myConditions{
@@ -62,16 +61,19 @@ section{
 }
 
 .firstRow{
-    @include d-flex($js: start, $ai: start)
-
+    @include d-flex($js: start, $ai: start);
+    .firstArrow{
+        margin-top: 60px;
+        margin-left: -53px;
+    }
 }
 
 .secondRow{
     @include d-flex();
-    transition: background-image 1s;
+  
 
     img:hover &{
-        background-image: url('../../assets/img/Remote\ work\ Web\ hover.png');
+        background-image: url('../../assets/img/Remote work Web hover.png');
     }
 
     .secondArrow{
@@ -110,4 +112,55 @@ section{
 
 .bigRed{
     @include bigRed();
+}
+
+//---------------------Media Query----------------------------
+
+@media(max-width: 1190px){
+    .myPic{
+        width: 30%;
+    }
+
+    .myConditions{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .firstRow{
+        @include d-flex();
+
+        .firstArrow{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 880px){
+    .myPic{
+        display: none;
+    }
+ .presentation{
+    text-align: center;
+ }
+}
+
+@media(max-width: 580px){
+    .toContactBtnDiv{
+        justify-content: center;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .secondArrow{
+        display: none;
+    }
+
+.locationPointer{
+    width: 200px;
+}
+}
+
+@media(max-width: 400px){
+    section{
+        height: 100vh;
+    }
 }

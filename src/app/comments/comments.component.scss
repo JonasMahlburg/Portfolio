@@ -9,13 +9,13 @@ section{
         padding-right: 25%;
     }
 
-    .commentSection{
-        @include d-flex();
-        width: 1440px;
-height: 307px;
-padding: 0px 0px 0px 129px;
-gap: 32px;
-margin-top: 30px;
+        .commentSection {
+            @include d-flex();
+            width: 100%;
+            height: 307px;
+    
+            gap: 32px;
+            margin-top: 30px;
 
 .commentArrow{
     @include d-flex($ai: start);

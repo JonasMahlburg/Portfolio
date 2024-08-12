@@ -1,8 +1,9 @@
 @import '../../../styles.scss';
 
 img {
-    width: 588px;
+    width: 50%;
     height: 371px;
+    object-fit: contain;
 }
 
 .even {  flex-direction: row-reverse; }
@@ -13,9 +14,7 @@ img {
     @include d-flex();
     height: 371px;
     width: 1134px;
-
-
-    border: 1px solid yellow;
+    margin-bottom: 20px;
 }
 
 .singleProjectReverse{
@@ -24,29 +23,25 @@ img {
 }
 
 .title{
-    font-size: 48px;
-    font-weight: 700;
+    @include fonts(48px, 700);
 }
 
 .skills{
-    font-size: 18px;
-    font-weight: 400;
+@include fonts(18px, 400);
 }
 
 .description{
-    font-size: 18px;
-    font-weight: 400;
+    @include fonts(18px, 400);
 }
 
 .play {
     background-color: #00F4BF;
-    width: 158px;
+    width: 25%;
     height: 52px;
     padding: 15px 30px 15px 30px;
     gap: 10px;
-    font-size: 18;
-    font-weight: 500;
     text-decoration: none;
+    @include fonts(18px, 500);
     @include d-flex();
     cursor: pointer;
 
@@ -56,15 +51,14 @@ img {
 }
 
 .gitHub {
-    width: 125px;
+    width: 25%;
     height: 52px;
     @include d-flex();
     color: #E15544;
     padding: 15px 30px 15px 30px;
     gap: 10px;
     border: 1px, solid, #00F4BF;
-    font-size: 18px;
-    font-weight: 500;
+    @include fonts(18px, 500);
     text-decoration: none;
     cursor: pointer;
 
@@ -77,4 +71,27 @@ img {
     gap: 24px;
 }
 
+.infoSection{
+    width: 50%;
+    height: 371px;
+    text-wrap: wrap;
+}
 
+
+//-------------------------Media Querrys------------------//
+
+@media(max-width: 1170px){
+    .singleProject{
+        width: 100%;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .infoSection{
+        width: 100%;
+    }
+}

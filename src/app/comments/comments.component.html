@@ -11,4 +11,21 @@
            }
     </div>
 
+    <div class="slideshow-container">
+        <div *ngFor="let comment of comments; let i = index" class="mySlides fade">
+            <app-single-comment [singleComment]="comment"></app-single-comment>
+        </div>
+      
+        <!-- Navigation buttons -->
+        <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <!-- Dots -->
+      <div class="dot-container">
+        <span *ngFor="let comment of comments; let i = index" class="dot" (click)="currentSlide(i + 1)"></span>
+      </div>
+
 </section>
+
+

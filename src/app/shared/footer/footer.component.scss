@@ -65,3 +65,12 @@ footer {
   gap: 0px;
   opacity: 0px;
 }
+
+
+//----------------media querry----------------------
+
+@media(max-width: 590px){
+  .footerTop{
+    flex-direction: column;
+  }
+}

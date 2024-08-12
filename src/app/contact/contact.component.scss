@@ -8,6 +8,10 @@ section {
   flex-direction: column;
 }
 
+.container{
+  width: 100%;
+}
+
 .headline {
   @include d-flex();
   @include bigRed();
@@ -23,20 +27,16 @@ section {
 
   .textPart {
     text-wrap: wrap;
-    width: 504px;
+    width: 100%;
     height: 73px;
-    top: 85px;
-    left: 2px;
   }
 
   .email {
     background-image: url("../../assets/img/contact-img/icon\ _email_.png");
     background-repeat: no-repeat;
     padding-left: 30px;
-    width: 412px;
+    width: 100%;
     height: 30px;
-    top: 85px;
-    left: 555px;
     background-size: contain;
     @include d-flex($js: unset);
   }
@@ -46,12 +46,8 @@ section {
     background-repeat: no-repeat;
     padding-left: 30px;
     object-fit: cover;
-    width: 379px;
+    width: 100%;
     height: 33px;
-    top: 129px;
-    left: 557px;
-    gap: 0px;
-    opacity: 0px;
     background-size: contain;
     @include d-flex($js: unset);
   }
@@ -62,14 +58,14 @@ form {
 
   .smallInput {
     @include d-flex($g: 30px, $fd: column);
-   
+   width: 50%;
  
   }
 
   input[type="text"] {
     background-color: inherit;
     border: 1px, solid, #00f4bf;
-    width: 507px;
+    width: 100%;
     height: 56px;
     gap: 0px;
     color: #00f4bf;
@@ -96,13 +92,13 @@ textarea.invalid-input {
     background-color: inherit;
     border: 1px, solid, #00f4bf;
     color: #00f4bf;
-    width: 637px;
+    width: 50%;
     height: 144px;
     gap: 40px;
   }
 
   input[type="submit"] {
-    width: 104px;
+    width: 50%;
     height: 52px;
     top: 22px;
     left: 1081px;
@@ -123,6 +119,7 @@ textarea.invalid-input {
 
 .inputArea {
   @include d-flex($g: 40px);
+  width: 100%;
   ;
 }
 
@@ -155,4 +152,41 @@ background-position: right 16px top 8px;
 .errorSpan{
   color: red;
   position: absolute;
+}
+
+//----------------Media Querry------------
+
+@media(max-width: 950px){
+  .information{
+    flex-direction: column;
+  }
+
+  .headline{
+    font-size: 45px;
+  }
+
+  .inputArea{
+    flex-direction: column;
+  }
+
+.submitArea{
+@include d-flex($fd: column)
+}
+}
+
+
+@media(max-width: 580px){
+  .headline{
+    img{
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 390px){
+  .information{
+    .textPart{
+      padding-bottom: 15px;
+    }
+  }
 }

@@ -20,7 +20,7 @@ export class ProjectsComponent {
     gitHub: string;
    id: number}[] =[
   {
-    image: "../../../assets/img/app-screens/El Pollo Loco Screen blank.png",
+    image: "../../../assets/img/app-screens/startscreen_2.png",
     title: "El Pollo Loco",
     skills: "Java-Script | CSS | HTML",
     description: "a short and Fun Jump and Run game where you have to throw Salsa Bottles at a giant Chicken",
@@ -29,7 +29,7 @@ export class ProjectsComponent {
     id: 1,
   },
   {
-    image: "../../../assets/img/app-screens/El Pollo Loco Screen blank.png",
+    image: "../../../assets/img/app-screens/JOIN-Screen.png",
     title: "JOIN",
     skills: "Firebase | Java-Script | CSS | HTML",
     description: "Web Application with Databank for Team organization with a KanbanBoard",
@@ -38,7 +38,7 @@ export class ProjectsComponent {
     id: 2,
   },
   {
-    image: "../../../assets/img/app-screens/El Pollo Loco Screen blank.png",
+    image: "../../../assets/img/app-screens/Pokedex-Screen.png",
     title: "Pokédex",
     skills: "Rest API | Java-Script | CSS | HTML",
     description: "Collection of gen1 Pokemon with various Stats, using a Rest API",

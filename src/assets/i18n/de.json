@@ -1,0 +1,73 @@
+{
+    "whyMe": "über mich",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "title": "Web-Entwickler",
+    "whyMeText": "Ich bin leidenschaftlicher Web-Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese Ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
+    "iAm": "Ich",
+    "location": "wohne in Celle",
+    "remote": "kann von Zuhause arbeiten",
+    "skillsHead": "Meine Skills",
+    "mobileSkill": "Ich lerne stets dazu",
+    "commentHead": "Sie brauchen einen Team-Player? Das sagen andere über mich:",
+    "contactInfo": "Noch unsicher? Treten Sie mit mir in Kontakt, damit ich Sie von meinen Qualitäten überzeugen kann",
+    "policyText": "Ich habe die Datenschutzerkärungen gelesen und bin damit einverstanden, wie mit meinen Daten umgegangen wird.",
+
+
+    "project1":{
+        "image":"./assets/img/app-screens/startscreen_2.png",
+"name": "El Pollo Loco",
+"skills": "Java-Script | CSS | HTML",
+"description": "Ein lustiges Jump and Run Spiel in dem man ein riesiges Hühnchen mit Salsaflaschen besiegen muss",
+"play": "http://elpolloloco.jonas-mahlburg.de/index.html",
+"gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+"id":"3"
+    },
+    "project2":{
+        "image": "./assets/img/app-screens/JOIN-Screen.png",
+        "name": "Join",
+        "skills": "Firebase | Java-Script | CSS | HTML",
+        "description": "Eine Web-Applikation mit Datenbank zum Organisieren und Visualisieren von Arbeitsabläufen",
+        "play": "http://join.jonas-mahlburg.de/index.html",
+        "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+        "id":"3"
+    },
+"project3":{
+    "image": "./assets/img/app-screens/Pokedex-Screen.png",
+    "name": "Pokedex",
+    "skills": "Rest API | Java-Script | CSS | HTML",
+    "description": "Sammlung von Pokemon der ersten Generation über eine Rest API",
+    "play": "El Pollo Loco.html",
+    "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+    "id":"3"
+},
+
+"comment1":{
+    "name": "Mailo Mittelstädt",
+    "title": "JOIN",
+    "comment": "Jonas ist in Gruppenarbeiten ein wertvolles Mitglied, da er stets mit einer positiven Einstellung und viel Motivation dabei ist. Er bringt innovative Ideen ein und fördert durch seine offene Kommunikation einen regen Austausch im Team."
+},
+
+"comment2": {
+    "name": "Joel Sygulla",
+    "title": "JOIN",
+    "comment": "Es war eine große Bereicherung, Jonas bei unserem Projekt Join als Teamkollegen zu haben. Er konnte seine Aufgaben erfolgreich umsetzen und war durch seine nette und zuvorkommende Art jemand, mit dem man gerne zusammenarbeitet. Jonas hat gute Fachkenntnisse, eine gute Kommunikation und war stets hilfsbereit. Die Teamarbeit mit ihm hat wirklich Spaß gemacht, und ich kann ihn ohne Zweifel weiterempfehlen."
+  },
+
+  "comment3": {
+    "name": "Alexander Hähnlein",
+    "title": "JOIN",
+    "comment": "Jonas leistete in unserem Gruppenprojekt Join (Kanban-Board) hervorragende Arbeit bei der Erledigung seiner Aufgaben. Er zeigte sich engagiert und integrierte sich gut ins Team, indem er aktiv zum Projekt beitrug. Seine zuverlässige Arbeit und Teamfähigkeit machten die Zusammenarbeit mit ihm sehr angenehm. Ich empfehle ihn gerne weiter."
+  }
+
+
+
+
+
+
+    
+  
+
+   
+}

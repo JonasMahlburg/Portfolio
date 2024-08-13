@@ -2,15 +2,19 @@ import { NgClass } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass],
+  imports: [FormsModule, NgClass, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  translate = inject(TranslationService);
 
   http = inject(HttpClient)
 
@@ -39,6 +43,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+console.log('Vom Server klappt');
 
             ngForm.resetForm();
           },
@@ -48,6 +53,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+console.log('Local klappt');
 
       ngForm.resetForm();
     }

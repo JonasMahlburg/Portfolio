@@ -1,14 +1,33 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+translate = inject(TranslationService);
+
   @ViewChild('myElement') myElement!: ElementRef;
+
+    // Toggle the visibility of the pop-up menu
+    toggleMenu(): void {
+      const popUpMenu = document.getElementById('popUpMenu');
+      if (popUpMenu) {
+        popUpMenu.classList.toggle('hidden');
+        popUpMenu.classList.toggle('show');
+      }
+    }
+  
+    // Example method to show mouse coordinates (not fully implemented)
+    // showCoords(event: MouseEvent): void {
+    //   const coords = `X: ${event.clientX}, Y: ${event.clientY}`;
+    //   console.log(coords);
+    // }
 
 
   showCoords(event: MouseEvent) {

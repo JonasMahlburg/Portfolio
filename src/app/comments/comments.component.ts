@@ -1,31 +1,35 @@
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, inject } from '@angular/core';
 import { SingleCommentComponent } from './single-comment/single-comment.component';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-comments',
   standalone: true,
-  imports: [SingleCommentComponent, CommonModule],
+  imports: [SingleCommentComponent, CommonModule, TranslateModule],
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.scss']
 })
 export class CommentsComponent implements AfterViewInit, OnDestroy {
+  translate = inject(TranslationService);
+
   comments = [
     {
-      name: "Mailo Mittelstädt",
-      title: "JOIN",
-      comment: "Jonas ist in Gruppenarbeiten ein wertvolles Mitglied, da er stets mit einer positiven Einstellung und viel Motivation dabei ist. Er bringt innovative Ideen ein und fördert durch seine offene Kommunikation einen regen Austausch im Team."
+      name: "comment1.name",
+      title: "comment1.title",
+      comment: "comment1.comment"
     },
     {
-      name: "Joel Sygulla",
-      title: "JOIN",
-      comment: "Es war eine große Bereicherung, Jonas bei unserem Projekt Join als Teamkollegen zu haben. Er konnte seine Aufgaben erfolgreich umsetzen und war durch seine nette und zuvorkommende Art jemand, mit dem man gerne zusammenarbeitet. Jonas hat gute Fachkenntnisse, eine gute Kommunikation und war stets hilfsbereit. Die Teamarbeit mit ihm hat wirklich Spaß gemacht, und ich kann ihn ohne Zweifel weiterempfehlen."
+      name: "comment2.name",
+      title: "comment2.title",
+      comment: "comment2.comment"
     },
     {
-      name: "Alexander Hähnlein",
-      title: "JOIN",
-      comment: "Jonas leistete in unserem Gruppenprojekt Join (Kanban-Board) hervorragende Arbeit bei der Erledigung seiner Aufgaben. Er zeigte sich engagiert und integrierte sich gut ins Team, indem er aktiv zum Projekt beitrug. Seine zuverlässige Arbeit und Teamfähigkeit machten die Zusammenarbeit mit ihm sehr angenehm. Ich empfehle ihn gerne weiter."
-    }
+      name: "comment3.name",
+      title: "comment3.title",
+      comment: "comment3.comment"
+    },
   ];
 
   slideIndex = 1;

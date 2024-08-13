@@ -1,14 +1,14 @@
 <div  class="singleProject" [ngClass]="{ even:singleProject.id % 2 ==0, odd:singleProject.id % 2 !=0}">
     <div class="infoSection">
-        <p class="title">{{ singleProject.title }}</p>
-        <p class="skills">{{ singleProject.skills }}</p>
-        <p class="description">{{ singleProject.description }}</p>
+        <p class="title">{{ singleProject.title | translate }}</p>
+        <p class="skills">{{ singleProject.skills | translate }}</p>
+        <p class="description">{{ singleProject.description | translate }}</p>
         <div class="linkSection">
-          <a class="play" href="{{ singleProject.play }}">LIVE TEST</a>
-          <a class="gitHub" href="{{ singleProject.gitHub }}">GitHub</a>
+          <a class="play" href="{{ singleProject.play | translate}}">LIVE TEST</a>
+          <a class="gitHub" href="{{ singleProject.gitHub | translate}}">GitHub</a>
         </div>
     </div>
-  <img src="{{ singleProject.image }}" alt="" />
+  <img src="{{ singleProject.image | translate }}" alt="" />
 </div>
 
 

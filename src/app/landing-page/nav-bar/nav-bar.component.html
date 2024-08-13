@@ -1,24 +1,33 @@
 <nav>
-  <img class="logoMobile" src="../../../assets/img/logoNew.png" alt="Logo">
-    <div class="navigation">
-      <img class="logo" src="../../../assets/img/logoNew.png" alt="Logo">
-      <a href="">Why Me</a>
-      <a href="">Skills</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
-    </div>
+  <img class="logoMobile" src="./assets/img/logoNew.png" alt="Logo">
+  <div class="navigation">
+    <img class="logo" src="./assets/img/logoNew.png" alt="Logo">
+    <a href="#why_Me">{{'whyMe' | translate}}</a>
+    <a href="#skills">{{'skills' | translate}}</a>
+    <a href="#projects">{{'projects' | translate}}</a>
+    <a href="#contact">{{'contact' | translate}}</a>
+  </div>
 
-    <div class="burgerMenu">
-      <div class="popUp">
-        <a href="">Why Me</a>
-        <a href="">Skills</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-      </div>
-    </div>
-    <div #language class="language">
-      <button (mousemove)="showCoords($event)">DE | EN</button>
-    </div>
-  </nav>
+  <!-- Burger Menu Icon -->
+  <div class="burgerMenu" (click)="toggleMenu()">
+    &#9776;
+  </div>
+
+  <!-- Pop-Up Menu -->
+  <div id="popUpMenu" class="popUp hidden">
+    <div class="closeButton" (click)="toggleMenu()">&times;</div>
+    <a href="#why_Me">{{'whyMe' | translate}}</a>
+    <a href="#skills">{{'skills' | translate}}</a>
+    <a href="#projects">{{'projects' | translate}}</a>
+    <a href="#contact">{{'contact' | translate}}</a>
+    <button (mousemove)="showCoords($event)">DE | EN</button>
+  </div>
+
+  <div #language class="language">
+   <p (click)="translate.switchLanguage('en')">EN</p>
+   <p (click)="translate.switchLanguage('de')">DE</p>
+  </div>
+</nav>
+
 
   

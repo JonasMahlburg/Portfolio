@@ -1,0 +1,63 @@
+{
+    "whyMe": "Why Me",
+    "skills": "skills",
+    "projects": "projects",
+    "contact": "contact",
+    "title": "Web-Developer",
+    "whyMeText": "Ich bin leidenschaftlicher Web-Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese Ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
+    "iAm": "I am",
+    "location": "located in Celle",
+    "remote": "open to remote controll",
+    "skillsHead": "My skills",
+    "mobileSkill": "I am continouesly learning",
+    "commentHead": "need a team-Player? Here is what others say about me:",
+    "contactInfo": "Still not sure if I am the right person for your projects? Contact Me so I can ressaure you. Let us work together",
+    "policyText": "I've read the privacy policy and agree to the proceesing of my data as outlined.",
+
+
+    "project1":{
+        "image":"./assets/img/app-screens/startscreen_2.png",
+"name": "El Pollo Loco",
+"skills": "Java-Script | CSS | HTML",
+"description": "A Fun little browser-game where you defeat a giant Chicken with salsa",
+"play": "http://elpolloloco.jonas-mahlburg.de/index.html",
+"gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+"id":"3"
+    },
+    "project2":{
+        "image": "./assets/img/app-screens/JOIN-Screen.png",
+        "name": "Join",
+        "skills": "Firebase | Java-Script | CSS | HTML",
+        "description": "An Web-app with Databank to organize and visualize Team projects",
+        "play": "http://join.jonas-mahlburg.de/index.html",
+        "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+        "id":"3"
+    },
+"project3":{
+    "image": "./assets/img/app-screens/Pokedex-Screen.png",
+    "name": "Pokedex",
+    "skills": "Rest API | Java-Script | CSS | HTML",
+    "description": "Collection of the 1.Gen Pokemon using Rest API",
+    "play": "blub",
+    "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+    "id":"3"
+},
+
+"comment1":   {
+    "name": "Mailo Mittelstädt",
+    "title": "JOIN",
+    "comment": "Jonas is a valuable member in group work, as he consistently brings a positive attitude and a lot of motivation. He contributes innovative ideas and encourages active communication within the team, fostering a lively exchange."
+  },
+  "comment2": {
+    "name": "Joel Sygulla",
+    "title": "JOIN",
+    "comment": "It was a great asset to have Jonas as a team colleague on our Join project. He successfully carried out his tasks and was a pleasure to work with due to his friendly and courteous manner. Jonas has strong technical knowledge, good communication skills, and was always helpful. He was truly a pleasure to work with, and I can recommend him without a doubt"
+  },
+  "comment3":    {
+    "name": "Alexander Hähnlein",
+    "title": "JOIN",
+    "comment": "Jonas did an excellent job handling his tasks in our group project 'Join' (Kanban board). He was engaged and integrated well into the team, actively contributing to the project. His reliability and teamwork made working with him very pleasant. I’m happy to recommend him."
+  }
+
+
+}

@@ -71,10 +71,20 @@ width: 100%;
 .secondRow{
     @include d-flex();
   
-
-    img:hover &{
-        background-image: url('../../assets/img/Remote work Web hover.png');
+.remote{
+    background-image: url('../../assets/img/Icon Remote-2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 335px;
+    height: 57px;
+    gap: 10px;
+    text-wrap: wrap;
+    @include d-flex();
+    &:hover{
+        background-image: url('../../assets/img/Icon Remote.png');
     }
+}
+ 
 
     .secondArrow{
         -webkit-transform: scaleX(-1);

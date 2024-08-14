@@ -16,6 +16,8 @@ body{
 
 html{
     scroll-behavior: smooth;
+    max-width: 1200px;
+    margin: auto;
 }
 
 @mixin bigRed($fs: 54px, $fw: 500){

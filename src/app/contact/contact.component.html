@@ -9,33 +9,36 @@
             <p>{{'contactInfo' | translate}}</p>
         </div>
         <div class="contactInfo">
-            <div class="email">Email: darrylmanga&#64;yahoo.com</div>
+            <div class="email">Email: mail&#64;jonas-mahlburg.de</div>
             <div class="tel">Tel: 0176 123456</div>
         </div>
     </div>
     <div class="container">
-  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <div class="inputArea">
-        <div class="smallInput">
-           
-            <input [ngClass]="{redBorder: !name.valid && name.touched, greenBorder: name.valid && name.touched}" #name="ngModel" (ngModelChange)="updatePlaceholder(name)"  [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" placeholder="Your name..." required pattern="^[a-zA-Z]+$">
-      
-        
-           
-            <input [ngClass]="{redBorder: !email.valid && email.touched, greenBorder: email.valid && email.touched}" #email="ngModel" (ngModelChange)="updatePlaceholder(email)" [(ngModel)]="contactData.email"  type="text" id="email" name="email" placeholder="Your Email adress.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-       
-        
-        </div>
-       
-      
-        <textarea minlength="4" [ngClass]="{redBorder: !message.valid && message.touched, greenBorder: message.valid && message.touched}" #message="ngModel" (ngModelChange)="updatePlaceholder(message)" [(ngModel)]="contactData.message"  id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="inputArea">
+                <div class="smallInput">
+                    <input [ngClass]="{redBorder: !name.valid && name.touched, greenBorder: name.valid && name.touched}"
+                        #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname"
+                        placeholder="Your name..." required pattern="^[a-zA-Z]+$">
+                    <input
+                        [ngClass]="{redBorder: !email.valid && email.touched, greenBorder: email.valid && email.touched}"
+                        #email="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email"
+                        placeholder="Your Email adress.." required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                </div>
+                <textarea minlength="4"
+                    [ngClass]="{redBorder: !message.valid && message.touched, greenBorder: message.valid && message.touched}"
+                    #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject"
+                    placeholder="Write something.." style="height:200px" required></textarea>
+            </div>
+
+            <div class="submitArea">
+                <input type="checkbox" name="privacyPolicyCheck" id="privacyPolicyCheck" value="privacyPolicy" required #privacyPolicyCheck="ngModel"  [(ngModel)]="contactData.privacyPolicyAccepted">
+                <label for="privacyPolicyCheck"> {{'policyText' | translate}}</label>
+                
+                <input type="submit" value="Send" [disabled]="!contactForm.valid">
+            </div>
+
+        </form>
     </div>
- 
-<div class="submitArea">
-    <p class="policy">{{'policyText' | translate}}</p>
-    <input type="submit" value="Send">
-</div>
-  
-  </form>
-</div>
 </section>

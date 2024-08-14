@@ -16,16 +16,19 @@
   <!-- Pop-Up Menu -->
   <div id="popUpMenu" class="popUp hidden">
     <div class="closeButton" (click)="toggleMenu()">&times;</div>
-    <a href="#why_Me">{{'whyMe' | translate}}</a>
-    <a href="#skills">{{'skills' | translate}}</a>
-    <a href="#projects">{{'projects' | translate}}</a>
-    <a href="#contact">{{'contact' | translate}}</a>
-    <button (mousemove)="showCoords($event)">DE | EN</button>
+    <a href="#why_Me" (click)="toggleMenu()">{{'whyMe' | translate}}</a>
+    <a href="#skills" (click)="toggleMenu()">{{'skills' | translate}}</a>
+    <a href="#projects" (click)="toggleMenu()">{{'projects' | translate}}</a>
+    <a href="#contact" (click)="toggleMenu()">{{'contact' | translate}}</a>
+    <div  class="languageMobile">
+      <p class="EN" (click)="translate.switchLanguage('en')">EN</p>
+      <p class="DE" (click)="translate.switchLanguage('de')">DE</p>
+     </div>
   </div>
 
-  <div #language class="language">
-   <p (click)="translate.switchLanguage('en')">EN</p>
-   <p (click)="translate.switchLanguage('de')">DE</p>
+  <div class="language">
+   <p class="EN" (click)="translate.switchLanguage('en')">EN</p>
+   <p class="DE" (click)="translate.switchLanguage('de')">DE</p>
   </div>
 </nav>
 

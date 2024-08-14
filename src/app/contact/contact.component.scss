@@ -59,6 +59,7 @@ form {
   .smallInput {
     @include d-flex($g: 30px, $fd: column);
    width: 50%;
+   padding-left: 5%;
  
   }
 
@@ -69,16 +70,21 @@ form {
     height: 56px;
     gap: 0px;
     color: #00f4bf;
+
+    ::placeholder {
+      color: red;
+      opacity: 60;
+      opacity: 1; /* Firefox */
+  
+    }
   }
 
-  // input[type="text"]:invalid{
-  //   border: 1px solid red;
 
-  // }
 
   input[type="text"].invalid-input,
 textarea.invalid-input {
     border: 1px solid red;
+    color: red;
 }
 
 .error-message {
@@ -95,6 +101,7 @@ textarea.invalid-input {
     width: 50%;
     height: 144px;
     gap: 40px;
+    padding-right: 5%;
   }
 
   input[type="submit"] {
@@ -105,41 +112,42 @@ textarea.invalid-input {
     padding: 15px 30px 15px 30px;
     gap: 10px;
     border: 1px 0px 0px 0px;
-    border: 2px solid gray;
+    border: 2px solid #02f4bf;
     background-color: inherit;
-    color: gray;
+    color: #00f4bf;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: grey; 
+      cursor: not-allowed; 
+      border-color: gray;
+      color: darkgray
+    }
+    
   }
 
-  ::placeholder {
-    color: #02f4bf;
-    opacity: 60;
-    opacity: 1; /* Firefox */
-  }
+
+
+}
+
+.submitArea{
+  @include d-flex()
 }
 
 .inputArea {
   @include d-flex($g: 40px);
   width: 100%;
+  padding-right: 5%;
   ;
 }
 
-.policy{
-  background-image: url('../../assets/img/Privacy-Policy/check_box-default.png');
-  background-position: left;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-
-  &:hover{
-    background-image: url('../../assets/img/Privacy-Policy/Check_box-hover.png');
-  }
-}
 
 .redBorder{
   border-color: red;
 background-image: url('../../assets/img/Privacy-Policy/done_error.png');
 background-repeat: no-repeat;
 background-position: right 16px top 8px;
-
+color: red
 }
 
 .greenBorder{

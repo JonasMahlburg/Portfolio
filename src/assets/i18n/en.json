@@ -1,10 +1,10 @@
 {
     "whyMe": "Why Me",
     "skills": "skills",
-    "projects": "projects",
+    "projects": "Projects",
     "contact": "contact",
     "title": "Web-Developer",
-    "whyMeText": "Ich bin leidenschaftlicher Web-Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese Ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
+    "whyMeText": "I am a passionate web developer who is always seeking new challenges. I am quick to get up to speed on complex projects and expand them further. This makes me a valuable member of your team.",
     "iAm": "I am",
     "location": "located in Celle",
     "remote": "open to remote controll",
@@ -38,7 +38,7 @@
     "name": "Pokedex",
     "skills": "Rest API | Java-Script | CSS | HTML",
     "description": "Collection of the 1.Gen Pokemon using Rest API",
-    "play": "blub",
+    "play": "http://pokedex.jonas-mahlburg.de/index.html",
     "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
     "id":"3"
 },
@@ -57,7 +57,36 @@
     "name": "Alexander Hähnlein",
     "title": "JOIN",
     "comment": "Jonas did an excellent job handling his tasks in our group project 'Join' (Kanban board). He was engaged and integrated well into the team, actively contributing to the project. His reliability and teamwork made working with him very pleasant. I’m happy to recommend him."
-  }
+  },
+
+
+"imprint": "Imprint",
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "text": {
+        "H1": "Privacy Policy",
+        "H2": "1. Data Protection at a Glance",
+        "H3": "General Information",
+        "H3.Text": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you can be personally identified. For detailed information on the subject of data protection, please refer to our privacy policy listed below this text.",
+        "H4_1": "Data Collection on this Website",
+        "H4_1.Text": "Who is responsible for data collection on this website?",
+        "P1": "The data processing on this website is carried out by the website operator. You can find their contact details in the section 'Notice on the Responsible Party' in this privacy policy.",
+        "H4_2": "How do we collect your data?",
+        "P2": "On the one hand, your data is collected by you providing it to us. This could, for example, be data you enter in a contact form.",
+        "P3": "Other data is collected automatically or with your consent when you visit the website by our IT systems. This primarily includes technical data (e.g., internet browser, operating system, or time of page access). The collection of this data occurs automatically as soon as you enter this website.",
+        "H4_3": "What do we use your data for?",
+        "P4": "Part of the data is collected to ensure the error-free provision of the website. Other data can be used to analyze your user behavior.",
+        "H4_4": "What rights do you have regarding your data?",
+        "P5": "You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time free of charge. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. Additionally, you have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to lodge a complaint with the competent supervisory authority.",
+        "P6": "For this and other questions regarding data protection, you can contact us at any time.",
+        "H2_2": "2. Hosting",
+        "P7": "We host the content of our website with the following provider:",
+        "H3_2": "All-Inkl",
+        "P8": "The provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). You can find more details in All-Inkl's privacy policy: <a href=\"https://all-inkl.com/datenschutzinformationen/\" target=\"_blank\" rel=\"noopener noreferrer\">https://all-inkl.com/datenschutzinformationen/</a>.",
+        "P9": "The use of All-Inkl is based on Art. 6(1)(f) GDPR. We have a legitimate interest in a reliable presentation of our website. If consent has been requested, the processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and § 25(1) TDDDG."
+    }
+}
+
 
 
 }

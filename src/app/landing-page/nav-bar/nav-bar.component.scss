@@ -2,6 +2,38 @@
 @import '../../../styles.scss';
 *{
     color: #E15544;
+    @include d-flex();
+}
+
+.language{
+  @include d-flex($g: 15px);
+  padding-right: 30px;
+ 
+  .EN:hover{
+    color: #00F4BF;
+    cursor: pointer;
+  }
+  .DE:hover{
+    color: #00F4BF;
+    cursor: pointer;
+  }
+}
+
+.languageMobile{
+  @include d-flex($g: 15px);
+
+ 
+  .EN:hover{
+    color: #00F4BF;
+    cursor: pointer;
+  }
+  .DE:hover{
+    color: #00F4BF;
+    cursor: pointer;
+  }
+
+  
+
 }
 
 .logo {
@@ -18,7 +50,7 @@
 }
 
 nav {
-    @include d-flex($js: space-between);
+    @include d-flex($js: space-around);
     height: 92px;
     position: sticky;
     top: 0;
@@ -75,6 +107,8 @@ background-color: inherit;
     height: 35px;
     font-size: 30px;
     cursor: pointer;
+
+
 }
 
 
@@ -96,6 +130,9 @@ background-color: inherit;
     color: #E15544;
     text-decoration: none;
     margin: 15px 0;
+    &:hover{
+      color: #00F4BF;
+    }
   }
   
   /* X-Button Styling */
@@ -105,6 +142,10 @@ background-color: inherit;
     right: 20px;
     font-size: 30px;
     cursor: pointer;
+    &:hover{
+      rotate: 30deg;
+      transform: scale(1.3);
+    }
   }
   
   /* Versteckt das Pop-Up Menü */
@@ -133,10 +174,10 @@ background-color: inherit;
 
 @media(max-width: 590px){
 nav{
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-    button{
+    .language{
     display: none;
 }
 .navigation{

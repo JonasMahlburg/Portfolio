@@ -93,5 +93,6 @@ img {
 
     .infoSection{
         width: 100%;
+        @include d-flex($fd: column);
     }
 }

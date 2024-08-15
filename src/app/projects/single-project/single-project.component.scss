@@ -6,8 +6,8 @@ img {
     object-fit: contain;
 }
 
-.even {  flex-direction: row-reverse; }
-.odd { flex-direction: row; }
+.evenP {  flex-direction: row-reverse !important }
+.oddP { flex-direction: row !important}
 
 .singleProject{
     color:#00F4BF;
@@ -17,13 +17,11 @@ img {
     margin-bottom: 20px;
 }
 
-.singleProjectReverse{
-    display: flex;
-    flex-direction: row-reverse;
-}
+
 
 .title{
     @include fonts(48px, 700);
+    margin-bottom: 0;
 }
 
 .skills{
@@ -39,10 +37,9 @@ img {
     width: 25%;
     height: 52px;
     padding: 15px 30px 15px 30px;
-    gap: 10px;
     text-decoration: none;
     @include fonts(18px, 500);
-    @include d-flex();
+    @include d-flex($g: 10px);
     cursor: pointer;
 
     &:hover{
@@ -53,10 +50,9 @@ img {
 .gitHub {
     width: 25%;
     height: 52px;
-    @include d-flex();
+    @include d-flex($g: 10px);
     color: #E15544;
     padding: 15px 30px 15px 30px;
-    gap: 10px;
     border: 1px, solid, #00F4BF;
     @include fonts(18px, 500);
     text-decoration: none;
@@ -75,15 +71,16 @@ img {
     width: 50%;
     height: 371px;
     text-wrap: wrap;
+    @include d-flex($fd: column);
 }
 
 
 //-------------------------Media Querrys------------------//
 
-@media(max-width: 1170px){
+@media(max-width: 1300px){
     .singleProject{
         width: 100%;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
         height: fit-content;
     }
 

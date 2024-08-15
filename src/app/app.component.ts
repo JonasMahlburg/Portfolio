@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { SkillsComponent } from "./skills/skills.component";
@@ -8,7 +8,8 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { CommentsComponent } from './comments/comments.component';
 import  AOS  from "aos";
-import { NavBarComponent } from "./landing-page/nav-bar/nav-bar.component";
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { ViewportScroller } from '@angular/common';
 
 
 @Component({
@@ -18,8 +19,17 @@ import { NavBarComponent } from "./landing-page/nav-bar/nav-bar.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'Portfolio';
+export class AppComponent implements OnInit {
+
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
+
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
+    });
+  }
 }
 
 AOS.init();

@@ -21,14 +21,14 @@
     <a href="#projects" (click)="toggleMenu()">{{'projects' | translate}}</a>
     <a href="#contact" (click)="toggleMenu()">{{'contact' | translate}}</a>
     <div  class="languageMobile">
-      <p class="EN" (click)="translate.switchLanguage('en')">EN</p>
-      <p class="DE" (click)="translate.switchLanguage('de')">DE</p>
+      <p class="EN" (click)="translate.switchLanguage('en');toggleMenu() ">EN</p>
+      <p class="DE" (click)="translate.switchLanguage('de'); toggleMenu()">DE</p>
      </div>
   </div>
 
   <div class="language">
-   <p class="EN" (click)="translate.switchLanguage('en')">EN</p>
-   <p class="DE" (click)="translate.switchLanguage('de')">DE</p>
+   <p class="EN" (click)="translate.switchLanguage('en') ">EN</p>
+   <p class="DE" (click)="translate.switchLanguage('de') ">DE</p>
   </div>
 </nav>
 

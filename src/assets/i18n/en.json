@@ -1,18 +1,20 @@
 {
     "whyMe": "Why Me",
-    "skills": "skills",
+    "skills": "Skills",
     "projects": "Projects",
-    "contact": "contact",
+    "contact": "Contact",
     "title": "Web-Developer",
     "whyMeText": "I am a passionate web developer who is always seeking new challenges. I am quick to get up to speed on complex projects and expand them further. This makes me a valuable member of your team.",
     "iAm": "I am",
     "location": "located in Celle",
     "remote": "open to remote controll",
     "skillsHead": "My skills",
+    "projectsHead": "My Projects",
     "mobileSkill": "I am continouesly learning",
     "commentHead": "need a team-Player? Here is what others say about me:",
     "contactInfo": "Still not sure if I am the right person for your projects? Contact Me so I can ressaure you. Let us work together",
     "policyText": "I've read the privacy policy and agree to the proceesing of my data as outlined.",
+    "source": "Source:",
 
 
     "project1":{

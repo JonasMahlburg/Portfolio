@@ -1,4 +1,4 @@
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -8,11 +8,13 @@ import { TranslationService } from '../translation.service';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass, TranslateModule],
+  imports: [FormsModule, NgClass, TranslateModule, NgIf],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  showPopup: boolean = false;
 
   translate = inject(TranslationService);
 
@@ -26,7 +28,7 @@ export class ContactComponent {
 
   }
 
-  mailTest = false;
+  mailTest = true;
 
   post = {
     endPoint: 'http://jonas-mahlburg.de/sendMail.php',
@@ -44,8 +46,8 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-console.log('Vom Server klappt');
-
+            console.log('Vom Server klappt');
+            this.showPopup = true; // Popup anzeigen
             ngForm.resetForm();
           },
           error: (error) => {
@@ -54,36 +56,15 @@ console.log('Vom Server klappt');
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-console.log('Local klappt');
-
+      console.log('Local klappt');
+      this.showPopup = true; // Popup anzeigen
       ngForm.resetForm();
     }
   }
-  // updatePlaceholder(input: any) {
-  //   const inputname = document.getElementById('fname') as HTMLInputElement;
-  //   const inputmail = document.getElementById('email') as HTMLInputElement;
-  //   const inputmessage = document.getElementById('message') as HTMLInputElement;
 
-  //   if (!input.valid && input.touched) {
-  //     inputname.placeholder = "Please tell me your name";
-  //     inputname.value = "";
-  //   } else {
-  //     inputname.placeholder = "Your name...";
-  //   }
+  closePopup() {
+    this.showPopup = false;
+  }
 
-  //   if (!input.valid && input.touched) {
-  //     inputmail.placeholder = "Please tell me your email adress";
-  //     inputmail.value = "";
-  //   } else {
-  //     inputmail.placeholder = "Your email adress";
-  //   }
-
-  //   if (!input.valid && input.touched) {
-  //     inputmessage.placeholder = "Please right something";
-  //     inputmessage.value = "";
-  //   } else {
-  //     inputmessage.placeholder = "Your message";
-  //   }
-  // }
 
 }

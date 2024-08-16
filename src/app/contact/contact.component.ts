@@ -28,7 +28,7 @@ export class ContactComponent {
 
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'http://jonas-mahlburg.de/sendMail.php',
@@ -46,8 +46,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log('Vom Server klappt');
-            this.showPopup = true; // Popup anzeigen
+            this.showPopup = true;
             ngForm.resetForm();
           },
           error: (error) => {
@@ -56,8 +55,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log('Local klappt');
-      this.showPopup = true; // Popup anzeigen
+      this.showPopup = true;
       ngForm.resetForm();
     }
   }

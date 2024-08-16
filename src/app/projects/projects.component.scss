@@ -1,10 +1,7 @@
 @import '../../styles.scss';
 section{
- @include d-flex();
-    flex-direction: column;
-   
-
-
+ @include d-flex($fd: column);
+    
     h2{
         @include bigRed();
     }

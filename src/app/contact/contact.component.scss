@@ -6,6 +6,7 @@ section {
   color: #00f4bf;
   @include d-flex();
   flex-direction: column;
+  height: 100vh;
 }
 
 .container{

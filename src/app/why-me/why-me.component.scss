@@ -91,6 +91,8 @@ padding-left: 5px;
 }
 
 .toContactBtn {
+    @include d-flex();
+    text-decoration: none;;
     background-color: #00F4BF;
     font-size: 18px;
     font-weight: 500;
@@ -122,7 +124,7 @@ padding-left: 5px;
 
 //---------------------Media Query----------------------------
 
-@media(max-width: 1190px){
+@media(max-width: 1250px){
     .myPic{
         width: 30%;
     }

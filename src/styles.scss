@@ -8,11 +8,7 @@
 
 body{
     background-image: linear-gradient(rgba(11,4,45,1), rgba(29,12,123,1));
-    margin: 0;
-    font-family: 'Roboto';
-    color: #00f4bf;
-    width: 100%;
-    padding-left: 10px;
+    // overflow-y: hidden; /* Hide horizontal scrollbar */
 }
 
 html{

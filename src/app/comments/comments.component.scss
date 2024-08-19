@@ -127,3 +127,10 @@ section{
         display: flex;
     }
   }
+
+
+@media(max-width: 590px){
+  .slideshow-container{
+    margin: 0;
+  }
+}

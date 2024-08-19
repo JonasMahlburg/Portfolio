@@ -43,7 +43,7 @@
 }
 
 .logoMobile {
-    display: none;
+    // display: none;
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -158,21 +158,12 @@ background-color: inherit;
     transform: translateX(0);
   }
   
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .navigation {
-      display: none;
-    }
-  
-    .burgerMenu {
-      display: block;
-    }
-  }
+
   
 
 //----------------------Media Query-----------------------------------------------
 
-@media(max-width: 590px){
+@media(max-width: 770px){
 nav{
     justify-content: space-between;
 }
@@ -185,6 +176,7 @@ nav{
 }
 .burgerMenu{
     display:flex;
+    padding-right: 20px;
     
 }
 .logoMobile{

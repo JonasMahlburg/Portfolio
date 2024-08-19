@@ -10,6 +10,7 @@ height: 30vh;
 
 h2{
     @include bigRed();
+    margin-top: 100px;
 }
 
 .skillTree{

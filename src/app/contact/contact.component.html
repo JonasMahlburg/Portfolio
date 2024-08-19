@@ -19,7 +19,7 @@
                 <div class="smallInput">
                     <input [ngClass]="{redBorder: !name.valid && name.touched, greenBorder: name.valid && name.touched}"
                         #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname"
-                        placeholder="Your name..." required pattern="^[a-zA-Z]+$">
+                        placeholder="Your name..." required pattern="^[a-zA-Z]+( [a-zA-Z]+)?$">
                     <input
                         [ngClass]="{redBorder: !email.valid && email.touched, greenBorder: email.valid && email.touched}"
                         #email="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email"

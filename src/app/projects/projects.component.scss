@@ -1,9 +1,11 @@
 @import '../../styles.scss';
 section{
  @include d-flex($fd: column);
+ 
     
     h2{
         @include bigRed();
+        margin-top: 100px;
     }
 }
 

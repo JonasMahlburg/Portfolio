@@ -4,11 +4,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass, TranslateModule, NgIf],
+  imports: [FormsModule, NgClass, TranslateModule, NgIf, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

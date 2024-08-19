@@ -34,7 +34,7 @@
 
             <div class="submitArea">
                 <input type="checkbox" name="privacyPolicyCheck" id="privacyPolicyCheck" value="privacyPolicy" required #privacyPolicyCheck="ngModel"  [(ngModel)]="contactData.privacyPolicyAccepted">
-                <label for="privacyPolicyCheck"> {{'policyText' | translate}}</label>
+                <label for="privacyPolicyCheck"> {{'policyText1' | translate}}<a routerLink="PrivacyPolicy">{{'privacyPolicy.title' | translate}}</a>{{'policyText2' | translate}}</label>
                 
                 <input type="submit" value="Send" [disabled]="!contactForm.valid">
             </div>

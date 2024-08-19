@@ -26,3 +26,4 @@ TranslateModule.forRoot({
   }
 }).providers!],
 };
+

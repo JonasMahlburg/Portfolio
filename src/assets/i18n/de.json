@@ -13,7 +13,8 @@
     "mobileSkill": "Ich lerne stets dazu",
     "commentHead": "Sie brauchen einen Team-Player? Das sagen andere über mich:",
     "contactInfo": "Noch unsicher? Treten Sie mit mir in Kontakt, damit ich Sie von meinen Qualitäten überzeugen kann",
-    "policyText": "Ich habe die Datenschutzerkärungen gelesen und bin damit einverstanden, wie mit meinen Daten umgegangen wird.",
+    "policyText1": "Ich habe die ",
+    "policyText2": " gelesen und bin damit einverstanden, wie mit meinen Daten umgegangen wird.",
     "source": "Quelle:",
     "submissionSuccess": "Ihre Email ist unterwegs",
 

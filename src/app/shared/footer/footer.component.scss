@@ -84,6 +84,10 @@ width: 100%;
 //----------------media querry----------------------
 
 @media(max-width: 590px){
+footer{
+  margin-top: 150px;
+}
+
   .footerTop{
     flex-direction: column;
   }

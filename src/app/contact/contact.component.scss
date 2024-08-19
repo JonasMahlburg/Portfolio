@@ -193,10 +193,28 @@ color: red
   cursor: pointer;
 }
 
+a{
+  text-decoration: none;
+  color: #E15544;
+  &:hover{
+    color: #00f4bf;;
+  }
+}
 
 //----------------Media Querry------------
 
 @media(max-width: 950px){
+form{
+  padding-left: 0;
+
+  .smallInput{
+    width: 55%;
+    padding-left: 0;
+  }
+}
+
+
+
   .information{
     flex-direction: column;
   }
@@ -210,7 +228,7 @@ color: red
   }
 
 .submitArea{
-@include d-flex($fd: column)
+@include d-flex($fd: column, $g: 10px)
 }
 }
 

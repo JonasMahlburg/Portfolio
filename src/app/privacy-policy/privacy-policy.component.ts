@@ -12,14 +12,9 @@ import { ViewportScroller } from '@angular/common';
   styleUrl: './privacy-policy.component.scss'
 })
 export class PrivacyPolicyComponent implements OnInit {
+  constructor(private router: Router) { }
+    
   ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.viewportScroller.scrollToPosition([0, 0]);
-      }
-    });
+    window.scrollTo(0, 0);
   }
-
-  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
-  translate = inject(TranslationService);
 }

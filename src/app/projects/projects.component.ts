@@ -40,14 +40,15 @@ export class ProjectsComponent {
     gitHub: "project2.gitHub",
     id: 2,
   },
-  {
-    image:"project3.image",
-    title: "project3.name",
-    skills: "project3.skills",
-    description: "project3.description",
-    play: "project3.play",
-    gitHub: "project3.gitHub",
-    id: 3,
-  }];
+  // {
+  //   image:"project3.image",
+  //   title: "project3.name",
+  //   skills: "project3.skills",
+  //   description: "project3.description",
+  //   play: "project3.play",
+  //   gitHub: "project3.gitHub",
+  //   id: 3,
+  // }
+  ];
 
 }

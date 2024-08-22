@@ -1,4 +1,6 @@
-<div  class="singleProject" [ngClass]="{ evenP:singleProject.id % 2 ==0, oddP:singleProject.id % 2 !=0}">
+<div data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="2000" class="singleProject" [ngClass]="{ evenP:singleProject.id % 2 ==0, oddP:singleProject.id % 2 !=0}">
     <div class="infoSection">
         <p class="title">{{ singleProject.title | translate }}</p>
         <p class="skills">{{ singleProject.skills | translate }}</p>

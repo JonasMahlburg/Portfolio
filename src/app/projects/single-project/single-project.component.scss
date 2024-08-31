@@ -11,7 +11,7 @@ img {
 
 .singleProject{
     color:#00F4BF;
-    @include d-flex();
+    @include d-flex($g: 8px);
     height: 371px;
     width: 1134px;
     margin-bottom: 20px;

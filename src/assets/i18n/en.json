@@ -11,8 +11,8 @@
     "skillsHead": "My skills",
     "projectsHead": "My Projects",
     "mobileSkill": "I am continouesly learning",
-    "commentHead": "need a team-Player? Here is what others say about me:",
-    "contactInfo": "Still not sure if I am the right person for your projects? Contact Me so I can ressaure you. Let us work together",
+    "commentHead": "need a Team Player? Here is what others say about me:",
+    "contactInfo": "Still not sure if I am the right person for your projects? Contact me to convince you. Let us work together",
     "policyText1": "I've read the ",
     "policyText2": " and agree to the proceesing of my data as outlined.",
     "source": "Source:",
@@ -32,7 +32,7 @@
         "image": "./assets/img/app-screens/JOIN-Screen.png",
         "name": "Join",
         "skills": "Firebase | Java-Script | CSS | HTML",
-        "description": "An Web-app with Databank to organize and visualize Team projects",
+        "description": "A Web-app with Databank to organize and visualize Team projects",
         "play": "http://join.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
         "id":"3"
@@ -55,7 +55,7 @@
   "comment2": {
     "name": "Joel Sygulla",
     "title": "JOIN",
-    "comment": "It was a great asset to have Jonas as a team colleague on our Join project. He successfully carried out his tasks and was a pleasure to work with due to his friendly and courteous manner. Jonas has strong technical knowledge, good communication skills, and was always helpful. He was truly a pleasure to work with, and I can recommend him without a doubt"
+    "comment": "It was a great asset to have Jonas as a team colleague on our Join project. He successfully carried out his tasks and was a pleasure to work with due to his friendly and courteous manner. Jonas has strong technical knowledge, good communication skills, and was always helpful. He was truly a pleasure to work with, and I can recommend him without a doubt."
   },
   "comment3":    {
     "name": "Alexander Hähnlein",

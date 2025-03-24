@@ -8,6 +8,7 @@
     "iAm": "I am",
     "location": "located in Celle",
     "remote": "open to work remote",
+    "travell": "open to relocate",
     "skillsHead": "My skills",
     "projectsHead": "My Projects",
     "mobileSkill": "I am continouesly learning",
@@ -89,7 +90,14 @@
         "P8": "The provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). You can find more details in All-Inkl's privacy policy: <a href=\"https://all-inkl.com/datenschutzinformationen/\" target=\"_blank\" rel=\"noopener noreferrer\">https://all-inkl.com/datenschutzinformationen/</a>.",
         "P9": "The use of All-Inkl is based on Art. 6(1)(f) GDPR. We have a legitimate interest in a reliable presentation of our website. If consent has been requested, the processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and § 25(1) TDDDG."
     }
-}
+},
+
+  "contactForm": {
+    "namePlaceholder": "Your name...",
+    "emailPlaceholder": "Your email address...",
+    "messagePlaceholder": "Write something..."
+  }
+
 
 
 

@@ -8,13 +8,16 @@
 
 body{
     background-image: linear-gradient(rgba(11,4,45,1), rgba(29,12,123,1));
-    // overflow-y: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
+    font-family: 'Roboto';
+    color: #00f4bf;
+    width: 90%;
 }
 
 html{
     scroll-behavior: smooth;
-    max-width: 1400px;
-    margin: auto;
+    // max-width: 1200px;
+    // margin: auto;
 }
 
 @mixin bigRed($fs: 54px, $fw: 500){

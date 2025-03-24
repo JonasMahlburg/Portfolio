@@ -84,10 +84,35 @@ padding-left: 5px;
  
 
     .secondArrow{
+        padding-top: 40px;
+        rotate: 45deg;
+    }
+}
+
+.thirdRow{
+    @include d-flex();
+    margin-bottom: 15px;
+
+.travell{
+    background-image: url('../../assets/img/Basket.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 335px;
+    height: 57px;
+    gap: 10px;
+    text-wrap: wrap;
+    @include d-flex();
+    &:hover{
+        background-image: url('../../assets/img/Basket-move.png');
+    }
+}
+
+    .thirdArrow{
+        padding-top: 40px;
+        rotate: 320deg;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
-        padding-top: 40px;
-        rotate: -45deg;
+   
     }
 }
 

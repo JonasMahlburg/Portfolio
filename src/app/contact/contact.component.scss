@@ -55,6 +55,7 @@ section {
 }
 form {
   @include d-flex($g: 30px, $fd: column);
+
   
 
   .smallInput {
@@ -64,28 +65,30 @@ form {
  
   }
 
-  input[type="text"] {
-    background-color: inherit;
-    border: 1px, solid, #00f4bf;
-    width: 100%;
-    height: 56px;
-    gap: 0px;
-    color: #00f4bf;
+input[type="text"] {
+  background-color: inherit;
+  border: 1px solid #00f4bf;
+  width: 100%;
+  height: 56px;
+  color: #00f4bf;
+}
 
-    ::placeholder {
-      color: red;
-      opacity: 60;
-      opacity: 1; /* Firefox */
-  
-    }
-  }
+input[type="text"]::placeholder {
+  color: #00f4bf;
+  opacity: 0.6;
+}
 
+/* Safari-spezifische Anpassung */
+input[type="text"]::-webkit-input-placeholder {
+  color: #00f4bf;
+  opacity: 0.6;
+}
 
-
-  input[type="text"].invalid-input,
+/* Alternative Styling mit einer speziellen Klasse */
+input[type="text"].invalid-input,
 textarea.invalid-input {
-    border: 1px solid red;
-    color: red;
+  border: 2px solid red;
+  color: red;
 }
 
 .error-message {
@@ -105,6 +108,12 @@ textarea.invalid-input {
     padding-right: 5%;
   }
 
+  textarea::placeholder{
+    color: #00f4bf;
+    opacity: 0.6;
+  }
+
+
   input[type="submit"] {
     width: 50%;
     height: 52px;
@@ -123,12 +132,8 @@ textarea.invalid-input {
       cursor: not-allowed; 
       border-color: gray;
       color: darkgray
-    }
-    
+    }   
   }
-
-
-
 }
 
 .submitArea{
@@ -144,15 +149,15 @@ textarea.invalid-input {
 
 
 .redBorder{
-  border-color: red;
+  border-color: red !important;
 background-image: url('../../assets/img/Privacy-Policy/done_error.png');
 background-repeat: no-repeat;
 background-position: right 16px top 8px;
-color: red
+color: red !important;
 }
 
 .greenBorder{
-  border-color: green;
+  border-color: green !important;
   background-image: url('../../assets/img/Privacy-Policy/done_correct.png');
   background-repeat: no-repeat;
   background-position: right 16px top 8px;

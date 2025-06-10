@@ -27,7 +27,7 @@
 "description": "Ein lustiges Jump and Run Spiel in dem man ein riesiges Hühnchen mit Salsaflaschen besiegen muss",
 "play": "http://elpolloloco.jonas-mahlburg.de/index.html",
 "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-"id":"3"
+"id":"1"
     },
     "project2":{
         "image": "./assets/img/app-screens/JOIN-Screen.png",
@@ -35,8 +35,8 @@
         "skills": "Firebase | Java-Script | CSS | HTML",
         "description": "Eine Web-Applikation mit Datenbank zum Organisieren und Visualisieren von Arbeitsabläufen",
         "play": "http://join.jonas-mahlburg.de/index.html",
-        "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-        "id":"3"
+        "gitHub": "https://github.com/JonasMahlburg/Join",
+        "id":"2"
     },
 "project3":{
     "image": "./assets/img/app-screens/Pokedex-Screen.png",
@@ -44,8 +44,17 @@
     "skills": "Rest API | Java-Script | CSS | HTML",
     "description": "Sammlung von Pokemon der ersten Generation über eine Rest API",
     "play": "http://pokedex.jonas-mahlburg.de/index.html",
-    "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+    "gitHub": "https://github.com/JonasMahlburg/Pokedex",
     "id":"3"
+},
+"project4":{
+    "image": "./assets/img/app-screens/KanMind.png",
+    "name": "KanMind",
+    "skills": "PYTHON | Django | Rest_Framework",
+    "description": "Ein Backend geschrieben in Django_Rest_Framework",
+    "play": "/error",
+    "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
+    "id":"4"
 },
 
 "comment1":{

@@ -27,7 +27,7 @@
 "description": "A Fun little browser-game where you defeat a giant Chicken with salsa",
 "play": "http://elpolloloco.jonas-mahlburg.de/index.html",
 "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-"id":"3"
+"id":"1"
     },
     "project2":{
         "image": "./assets/img/app-screens/JOIN-Screen.png",
@@ -35,8 +35,8 @@
         "skills": "Firebase | Java-Script | CSS | HTML",
         "description": "A Web-app with Databank to organize and visualize Team projects",
         "play": "http://join.jonas-mahlburg.de/index.html",
-        "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-        "id":"3"
+        "gitHub": "https://github.com/JonasMahlburg/Join",
+        "id":"2"
     },
 "project3":{
     "image": "./assets/img/app-screens/Pokedex-Screen.png",
@@ -44,9 +44,18 @@
     "skills": "Rest API | Java-Script | CSS | HTML",
     "description": "Collection of the 1.Gen Pokemon using Rest API",
     "play": "http://pokedex.jonas-mahlburg.de/index.html",
-    "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+    "gitHub": "https://github.com/JonasMahlburg/Pokedex",
     "id":"3"
 },
+  "project4":{
+      "image": "./assets/img/app-screens/KanMind.png",
+      "name": "KanMind",
+      "skills": "PYTHON | Django | Rest_Framework",
+      "description": "A Backend-Database written with Django_Rest_Framework",
+      "play": "/error",
+      "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
+      "id":"4"
+  },
 
 "comment1":   {
     "name": "Mailo Mittelstädt",

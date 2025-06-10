@@ -48,6 +48,15 @@ export class ProjectsComponent {
     play: "project3.play",
     gitHub: "project3.gitHub",
     id: 3,
+  },
+    {
+    image:"project4.image",
+    title: "project4.name",
+    skills: "project4.skills",
+    description: "project4.description",
+    play: "project4.play",
+    gitHub: "project4.gitHub",
+    id: 4,
   }
   ];
 

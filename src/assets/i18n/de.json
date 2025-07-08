@@ -52,10 +52,19 @@
     "image": "./assets/img/app-screens/KanMind.png",
     "name": "KanMind",
     "skills": "PYTHON | Django | Rest_Framework",
-    "description": "Ein Backend geschrieben in Django_Rest_Framework",
+    "description": "Ein Backend, für ein Kanban-Board geschrieben in Django_Rest_Framework",
     "play": "/error",
     "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
     "id":"4"
+},
+"project5":{
+    "image": "./assets/img/app-screens/Coderr.png",
+    "name": "Coderr",
+    "skills": "PYTHON | Django | Rest_Framework",
+    "description": "Ein Backend, für eine Dienstleistungs-Plattform  geschrieben in Django_Rest_Framework",
+    "play": "/error",
+    "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
+    "id":"5"
 },
 
 "comment1":{

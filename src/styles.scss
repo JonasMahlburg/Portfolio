@@ -11,13 +11,11 @@ body{
     margin: 0;
     font-family: 'Roboto';
     color: #00f4bf;
-    width: 90%;
+    width: 100%;
 }
 
 html{
     scroll-behavior: smooth;
-    // max-width: 1200px;
-    // margin: auto;
 }
 
 @mixin bigRed($fs: 54px, $fw: 500){

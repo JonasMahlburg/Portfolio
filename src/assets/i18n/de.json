@@ -3,14 +3,16 @@
     "skills": "Skills",
     "projects": "Projekte",
     "contact": "Kontakt",
-    "title": "Web-Entwickler",
+    "title": "Fullstack-Entwickler",
     "whyMeText": "Ich bin leidenschaftlicher Web-Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
     "iAm": "Ich",
     "location": "wohne in Celle",
     "remote": "kann von Zuhause arbeiten",
     "travell": "Umzug ist möglich",
     "skillsHead": "Meine Skills",
+    "allSkills": "Alle",
     "projectsHead": "Meine Projekte",
+    "allProjects": "Alle",
     "mobileSkill": "Ich lerne stets dazu",
     "commentHead": "Sie brauchen einen Team-Player? Das sagen andere über mich:",
     "contactInfo": "Noch unsicher? Treten Sie mit mir in Kontakt, damit ich Sie von meinen Qualitäten überzeugen kann",
@@ -85,7 +87,8 @@
     "comment": "Jonas leistete in unserem Gruppenprojekt Join (Kanban-Board) hervorragende Arbeit bei der Erledigung seiner Aufgaben. Er zeigte sich engagiert und integrierte sich gut ins Team, indem er aktiv zum Projekt beitrug. Seine zuverlässige Arbeit und Teamfähigkeit machten die Zusammenarbeit mit ihm sehr angenehm. Ich empfehle ihn gerne weiter."
   },
 
-  "imprint": "Impressum",
+"imprint": "Impressum",
+"phone": "Telefon",
 "privacyPolicy": {
     "title": "Datenschutzerklärung",
     "text": {

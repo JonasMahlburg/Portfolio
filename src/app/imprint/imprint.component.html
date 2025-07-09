@@ -1,13 +1,39 @@
-<div class="imprint">
-    <h1>{{'imprint' | translate}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint</title>
+</head>
+<body>
+    <article class="imprint">
+    <header>
+        <h1>{{ 'imprint' | translate }}</h1>
+    </header>
 
-<p>Jonas Mahlburg<br />
-Meudonstra&szlig;e 14<br />
-29229 Celle</p>
+    <address>
+        Jonas Mahlburg<br>
+        Meudonstraße 14<br>
+        29229 Celle
+    </address>
 
-<h2>{{'contact' | translate}}</h2>
-<p>Telefon: 017646703864<br />
-E-Mail: mail&#64;jonas-mahlburg.de</p>
+    <section class="contactSection">
+        <header>
+            <h2>{{ 'contact' | translate }}</h2>
+        </header>
+        
+        <p>
+        <strong>{{ 'phone' | translate }}: </strong> <a href="tel:+4917646703864">+49 176 46703864</a><br>
+        <strong>E-mail: </strong> <a href="mailto:mail@jonas-mahlburg.de">mail&#64;jonas-mahlburg.de</a>
+        </p>
+    </section>
 
-<p>{{'source' | translate}}<a href="https://www.e-recht24.de">eRecht24</a></p>
-</div>
+    <p>
+        {{ 'source' | translate }} 
+        <a href="https://www.e-recht24.de" rel="noopener noreferrer" target="_blank">eRecht24</a>
+    </p>
+    </article>
+</body>
+</html>
+
+

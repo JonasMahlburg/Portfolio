@@ -3,14 +3,16 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "title": "Web-Developer",
+    "title": "Fullstack-Developer",
     "whyMeText": "I am a passionate web developer who is always seeking new challenges. I am quick to get up to speed on complex projects and expand them further. This makes me a valuable member of your team.",
     "iAm": "I am",
     "location": "located in Celle",
     "remote": "open to work remote",
     "travell": "open to relocate",
     "skillsHead": "My skills",
+    "allSkills": "all",
     "projectsHead": "My Projects",
+    "allProjects": "all",
     "mobileSkill": "I am continouesly learning",
     "commentHead": "need a Team Player? Here is what others say about me:",
     "contactInfo": "Still not sure if I am the right person for your projects? Contact me to convince you. Let us work together",
@@ -85,7 +87,8 @@
 
 
 "imprint": "Imprint",
-  "privacyPolicy": {
+"phone": "phone",
+"privacyPolicy": {
     "title": "Privacy Policy",
     "text": {
         "H1": "Privacy Policy",

@@ -1,33 +1,31 @@
 <section>
-    <h2>{{'skillsHead' | translate}}</h2>
+    <header>
+        <h2>{{'skillsHead' | translate}}</h2>
+    </header>
 
-    <div class="skillTree">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills.png" alt="Angular">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-2.png" alt="TypeScript">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-3.png" alt="Java-Script">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-4.png" alt="HTML">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-5.png" alt="CSS">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-6.png" alt="Rest-API">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-7.png" alt="Git">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-9.png" alt="Firebase">
-        <img data-aos="zoom-in" src="./assets/img/skills/Icons Skills-8.png" alt="Challenge Me?">
-    </div>
+    <nav>
+      <button (click)="showAll()" [class.active]="activeFilter === 'all'">{{'allSkills' | translate}}</button>
+      <button (click)="showFrontend()" [class.active]="activeFilter === 'frontend'">Frontend</button>
+      <button (click)="showBackend()" [class.active]="activeFilter === 'backend'">Backend</button>
+    </nav>
 
-    <div class="skillTreeMobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/Angular-mobile.png" alt="Angular-mobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/Typescript-mobile.png" alt="TypeScript-mobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/JavaScript-mobile.png" alt="Java-Script-mobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/HTML-mobile.png" alt="HTML-mobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/CSS-mobile.png" alt="CSS-mobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/API-mobil.png" alt="Rest-API-mobile">
-        <img data-aos="zoom-in" class="mobileImg" src="./assets/img/skills/Git-mobil.png" alt="Git-mobile">
-        <img data-aos="zoom-in" src="./assets/img/skills/Firebase-mobile.png" alt="Firebase-mobile">
-    </div>
+    <section class="skillTree">
+      <img *ngFor="let skill of visibleSkills"
+           [src]="skill.src"
+           [alt]="skill.alt"
+           data-aos="zoom-in">
+    </section>
+
+    <section class="skillTreeMobile">
+      <img *ngFor="let skill of visibleSkills"
+           class="mobileImg"
+           [src]="skill.mobileSrc"
+           [alt]="skill.alt"
+           data-aos="zoom-in">
+    </section>
 
     <div class="mobileMessage">
         <span>{{'mobileSkill' | translate}}</span>     
         <a href="#contact"><img src="./assets/img/skills/Icons Skills-8.png" alt="Challenge Me?"></a>
     </div>
 </section>
-
-<!--  -->

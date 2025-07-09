@@ -1,14 +1,31 @@
 
 <section >
-    <h2 >{{'projectsHead' | translate}}</h2>
-
-
-        @for (project of projects; track $index) {
-            <app-single-project [singleProject]="project"></app-single-project>  
-    }
-   
-
-
+    <header>
+        <h2 >{{'projectsHead' | translate}}</h2>
+    </header>
+<nav>
+    <button 
+      (click)="showAll()" 
+      [class.active]="activeFilter === 'all'">
+      {{'allProjects' | translate}}
+    </button>
+    <button 
+      (click)="switchToFrontend()" 
+      [class.active]="activeFilter === 'frontend'">
+      Frontend
+    </button>
+    <button 
+      (click)="switchToBackend()" 
+      [class.active]="activeFilter === 'backend'">
+      Backend
+    </button>
+</nav>
+    
+    <main>
+   @for (project of visibleProjects; track $index) {
+        <app-single-project [singleProject]="project"></app-single-project>  
+   }
+    </main>
 </section>
 
 

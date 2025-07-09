@@ -69,4 +69,22 @@ export class ProjectsComponent {
   },
   ];
 
+  visibleProjects = [...this.projects];
+  activeFilter: 'all' | 'frontend' | 'backend' = 'all';
+
+  switchToFrontend() {
+    this.visibleProjects = this.projects.filter(p => p.id >= 1 && p.id <= 3);
+    this.activeFilter = 'frontend';
+  }
+
+  switchToBackend() {
+    this.visibleProjects = this.projects.filter(p => p.id >= 4 && p.id <= 5);
+    this.activeFilter = 'backend';
+  }
+
+  showAll() {
+    this.visibleProjects = [...this.projects];
+    this.activeFilter = 'all';
+  }
+
 }

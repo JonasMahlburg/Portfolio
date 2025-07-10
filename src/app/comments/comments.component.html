@@ -1,9 +1,11 @@
 <section>
-    <h2>{{'commentHead' | translate}}</h2>
-
+    <header>
+        <h2>{{'commentHead' | translate}}</h2>
+    </header>
+    
     <div class="commentSection">
         <div class="commentArrow">
-            <img src="../../assets/img/Reference_Arrow.png" alt="">
+            <img src="../../assets/img/Reference_Arrow.png" alt="curved Arrow">
         </div>
      
         @for (comment of comments; track $index) {
@@ -16,15 +18,15 @@
             <app-single-comment [singleComment]="comment"></app-single-comment>
         </div>
       
-        <!-- Navigation buttons -->
+      
         <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
         <a class="next" (click)="plusSlides(1)">&#10095;</a>
-      </div>
+    </div>
       
-      <!-- Dots -->
-      <div class="dot-container">
+ 
+    <div class="dot-container">
         <span *ngFor="let comment of comments; let i = index" class="dot" (click)="currentSlide(i + 1)"></span>
-      </div>
+    </div>
 
 </section>
 

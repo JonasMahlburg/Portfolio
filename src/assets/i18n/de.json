@@ -4,7 +4,7 @@
     "projects": "Projekte",
     "contact": "Kontakt",
     "title": "Fullstack-Entwickler",
-    "whyMeText": "Ich bin leidenschaftlicher Web-Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
+    "whyMeText": "Ich bin leidenschaftlicher Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
     "iAm": "Ich",
     "location": "wohne in Celle",
     "remote": "kann von Zuhause arbeiten",
@@ -27,7 +27,7 @@
         "image":"./assets/img/app-screens/startscreen_2.png",
 "name": "El Pollo Loco",
 "skills": "Java-Script | CSS | HTML",
-"description": "Ein lustiges Jump and Run Spiel in dem man ein riesiges Hühnchen mit Salsaflaschen besiegen muss",
+"description": "Ein lustiges Jump and Run Spiel, in dem man ein riesiges Hühnchen mit Salsaflaschen besiegen muss",
 "play": "http://elpolloloco.jonas-mahlburg.de/index.html",
 "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
 "id":"1"
@@ -68,6 +68,15 @@
     "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
     "id":"5"
 },
+"project6":{
+    "image": "./assets/img/app-screens/Coderr.png",
+    "name": "Videoflix",
+    "skills": "PYTHON | Django | Rest_Framework | Angular",
+    "description": "Ein Fullstack Projekt, mit Videoplayer fürs Filme streamen",
+    "play": "/error",
+    "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
+    "id":"6"
+},
 
 "comment1":{
     "name": "Mailo Mittelstädt",
@@ -98,7 +107,7 @@
         "H3.Text": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
         "H4_1": "Datenerfassung auf dieser Website",
         "H4_1.Text": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
-        "P1": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt 'Hinweis zur Verantwortlichen Stelle' in dieser Datenschutzerklärung entnehmen.",
+        "P1": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt 'Hinweis zur verantwortlichen Stelle' in dieser Datenschutzerklärung entnehmen.",
         "H4_2": "Wie erfassen wir Ihre Daten?",
         "P2": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
         "P3": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
@@ -114,24 +123,9 @@
         "P9": "Die Verwendung von All-Inkl erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG."
     }
 },
-
-
   "contactForm":{
     "namePlaceholder": "Dein Name...",
     "emailPlaceholder": "Deine E-Mail-Adresse...",
     "messagePlaceholder": "Schreibe etwas..."
-  }
-
-    
-  
-
-
-
-
-
-
-    
-  
-
-   
+  }   
 }

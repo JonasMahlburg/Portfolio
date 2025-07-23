@@ -28,7 +28,7 @@
 "name": "El Pollo Loco",
 "skills": "Java-Script | CSS | HTML",
 "description": "Ein lustiges Jump and Run Spiel, in dem man ein riesiges Hühnchen mit Salsaflaschen besiegen muss",
-"play": "http://elpolloloco.jonas-mahlburg.de/index.html",
+"play": "https://elpolloloco.jonas-mahlburg.de/index.html",
 "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
 "id":"1"
     },
@@ -37,7 +37,7 @@
         "name": "Join",
         "skills": "Firebase | Java-Script | CSS | HTML",
         "description": "Eine Web-Applikation mit Datenbank zum Organisieren und Visualisieren von Arbeitsabläufen",
-        "play": "http://join.jonas-mahlburg.de/index.html",
+        "play": "https://join.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/Join",
         "id":"2"
     },
@@ -46,7 +46,7 @@
     "name": "Pokedex",
     "skills": "Rest API | Java-Script | CSS | HTML",
     "description": "Sammlung von Pokemon der ersten Generation über eine Rest API",
-    "play": "http://pokedex.jonas-mahlburg.de/index.html",
+    "play": "https://pokedex.jonas-mahlburg.de/index.html",
     "gitHub": "https://github.com/JonasMahlburg/Pokedex",
     "id":"3"
 },
@@ -55,7 +55,7 @@
     "name": "KanMind",
     "skills": "PYTHON | Django | Rest_Framework",
     "description": "Ein Backend, für ein Kanban-Board geschrieben in Django_Rest_Framework",
-    "play": "/error",
+    "play": "https://kanmind-site.jonas-mahlburg.de",
     "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
     "id":"4"
 },

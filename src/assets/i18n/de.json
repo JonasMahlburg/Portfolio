@@ -64,17 +64,17 @@
     "name": "Coderr",
     "skills": "PYTHON | Django | Rest_Framework",
     "description": "Ein Backend, für eine Dienstleistungs-Plattform  geschrieben in Django_Rest_Framework",
-    "play": "https://kanmind-site.jonas.mahlburg.de",
+     "play": "https://coderr-site.jonas-mahlburg.de",
     "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
     "id":"5"
 },
 "project6":{
-    "image": "./assets/img/app-screens/Coderr.png",
+     "image": "./assets/img/app-screens/coming_soon.png",
     "name": "Videoflix",
     "skills": "PYTHON | Django | Rest_Framework | Angular",
-    "description": "Ein Fullstack Projekt, mit Videoplayer fürs Filme streamen",
-    "play": "https://coderr-site.jonas-mahlburg.de",
-    "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
+    "description": "Ein Full-Stack Projekt, mit Videoplayer fürs Filme streamen",
+    "play": "/error",
+    "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
     "id":"6"
 },
 

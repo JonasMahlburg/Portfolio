@@ -67,6 +67,15 @@ export class ProjectsComponent {
     gitHub: "project5.gitHub",
     id: 5,
   },
+        {
+    image:"project6.image",
+    title: "project6.name",
+    skills: "project6.skills",
+    description: "project6.description",
+    play: "project6.play",
+    gitHub: "project6.gitHub",
+    id: 5,
+  },
   ];
 
   visibleProjects = [...this.projects];

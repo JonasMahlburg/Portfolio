@@ -68,6 +68,15 @@
       "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
       "id":"5"
   },
+  "project6":{
+    "image": "./assets/img/app-screens/coming_soon.png",
+    "name": "Videoflix",
+    "skills": "PYTHON | Django | Rest_Framework | Angular",
+    "description": "A full-stack project with a video player for streaming movies.",
+    "play": "/error",
+    "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
+    "id":"6"
+},
 
 "comment1":   {
     "name": "Mailo Mittelstädt",

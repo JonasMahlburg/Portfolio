@@ -101,6 +101,12 @@ button.active {
     }
 }
 
+@media(max-width: 420px){
+ button{
+    width: 100px;
+ }
+}
+
 @media(max-width: 370px){
     section{
         height: 80vh;

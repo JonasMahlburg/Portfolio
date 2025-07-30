@@ -193,6 +193,16 @@ padding-left: 5px;
 }
 }
 
+@media(max-width: 420px){
+    .thirdRow{
+        width: 225px;
+        margin-left: 35px;
+    }
+    .thirdArrow{
+        display: none;
+    }
+}
+
 @media(max-width: 400px){
     section{
         height: 100vh;

@@ -64,7 +64,7 @@
       "name": "Coderr",
       "skills": "PYTHON | Django | Rest_Framework",
       "description": "A Backend-Database, for a Service platform written with Django_Rest_Framework",
-      "play": "/error",
+      "play": "https://coderr-site.jonas-mahlburg.de",
       "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
       "id":"5"
   },

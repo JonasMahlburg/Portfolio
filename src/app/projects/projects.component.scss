@@ -42,4 +42,9 @@ button.active {
 .singleProject:nth-child(even) {
     flex-direction: row-reverse;
 }
-
+// ------------------------Media Query
+@media(max-width: 420px){
+ button{
+    width: 100px;
+ }
+}

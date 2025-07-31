@@ -69,7 +69,7 @@ input[type="text"] {
   background-color: inherit;
   border: 1px solid #00f4bf;
   width: 100%;
-  height: 56px;
+  height: 84px;
   color: #00f4bf;
 }
 
@@ -152,7 +152,7 @@ textarea.invalid-input {
   border-color: red !important;
 background-image: url('../../assets/img/Privacy-Policy/done_error.png');
 background-repeat: no-repeat;
-background-position: right 16px top 8px;
+background-position: right 16px top 24px;
 color: red !important;
 }
 
@@ -160,7 +160,7 @@ color: red !important;
   border-color: green !important;
   background-image: url('../../assets/img/Privacy-Policy/done_correct.png');
   background-repeat: no-repeat;
-  background-position: right 16px top 8px;
+  background-position: right 16px top 24px;
 }
 
 .errorSpan{

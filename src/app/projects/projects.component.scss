@@ -1,8 +1,8 @@
 @import '../../styles.scss';
 section{
  @include d-flex($fd: column);
- 
-    
+ margin-top: 80px;   
+
     h2{
         @include bigRed();
         margin-top: 100px;

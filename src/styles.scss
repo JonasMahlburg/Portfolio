@@ -12,6 +12,14 @@ body{
     font-family: 'Roboto';
     color: #00f4bf;
     width: 100%;
+    // overflow: hidden;
+}
+
+section {
+  max-width: 1200px; 
+  margin: 0 auto;
+  // padding: 0 20px;     
+  width: 100%;
 }
 
 html{

@@ -107,6 +107,13 @@ button.active {
  }
 }
 
+@media screen and (max-width: 400px) and (orientation: portrait) {
+      section {
+        height: 158vh;
+    }
+}
+
+
 @media(max-width: 370px){
     section{
         height: 80vh;

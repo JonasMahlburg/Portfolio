@@ -53,7 +53,7 @@ img {
     @include d-flex($g: 10px);
     color: #E15544;
     padding: 15px 30px 15px 30px;
-    border: 1px, solid, #00F4BF;
+    border: 1px solid #00F4BF;
     @include fonts(18px, 500);
     text-decoration: none;
     cursor: pointer;

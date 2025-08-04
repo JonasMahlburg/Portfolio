@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 img {
-    width: 50%;
+    width: 588px;
     height: 371px;
     object-fit: contain;
 }
@@ -34,9 +34,9 @@ img {
 
 .play {
     background-color: #00F4BF;
-    width: 25%;
+    width: 104px;
     height: 52px;
-    padding: 15px 30px 15px 30px;
+    // padding: 15px 30px 15px 30px;
     text-decoration: none;
     @include fonts(18px, 500);
     @include d-flex($g: 10px);
@@ -48,11 +48,11 @@ img {
 }
 
 .gitHub {
-    width: 25%;
+    width: 104px;
     height: 52px;
     @include d-flex($g: 10px);
     color: #E15544;
-    padding: 15px 30px 15px 30px;
+    // padding: 15px 30px 15px 30px;
     border: 1px solid #00F4BF;
     @include fonts(18px, 500);
     text-decoration: none;
@@ -68,10 +68,10 @@ img {
 }
 
 .infoSection{
-    width: 50%;
-    height: 371px;
+    width: 498px;
+    height: 318px;
     text-wrap: wrap;
-    @include d-flex($fd: column);
+    @include d-flex($fd: column, $ai: flex-start);
 }
 
 

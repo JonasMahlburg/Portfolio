@@ -1,15 +1,15 @@
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
+    font-family: 'RobotoMono';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'); 
+    src: url('./assets/fonts/RobotoMono-VariableFont_wght.ttf'); 
 }/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 
 body{
     background-image: linear-gradient(rgba(11,4,45,1), rgba(29,12,123,1));
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'RobotoMono';
     color: #00f4bf;
     width: 100%;
     // overflow: hidden;

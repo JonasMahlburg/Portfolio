@@ -3,12 +3,6 @@
         <h2>{{'skillsHead' | translate}}</h2>
     </header>
 
-    <nav>
-      <button (click)="showAll()" [class.active]="activeFilter === 'all'">{{'allSkills' | translate}}</button>
-      <button (click)="showFrontend()" [class.active]="activeFilter === 'frontend'">Frontend</button>
-      <button (click)="showBackend()" [class.active]="activeFilter === 'backend'">Backend</button>
-    </nav>
-
     <section class="skillTree">
       <img *ngFor="let skill of visibleSkills"
            [src]="skill.src"

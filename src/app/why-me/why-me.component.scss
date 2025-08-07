@@ -3,17 +3,28 @@
 section{
 @include d-flex();
 height: 100vh;
-width: 100%;
-padding-left: 5px;
+max-width: 1224px;
+
+}
+
+tbody{
+    width: 100%
+}
+
+.bigRed{
+    @include bigRed();
+    text-align: right;
+    margin: 0;
 }
 
 .presentation{
    text-align: right;
+   height: 84px;
   }
 
 .myPic{
-    width: 45%;
-    height: 80%;
+    width: 488px;
+    height: 452px;
     object-fit: contain;
 }
 
@@ -42,33 +53,30 @@ padding-left: 5px;
     margin: 0;
 }
 .whyMe{
-    width: 50%;
-    height: 80%;
+    width: 729px;
+    height: 452px;
     text-wrap: wrap;
+    @include d-flex($ai: flex-end, $fd: column, $js: right)
 }
 
 .myConditions{
-    @include d-flex($ai: start);
-}
-
-.conditionMarkers{
-    display: flex;
-    flex-direction: column;
+    @include d-flex($ai: start, $fd: column);
+    width: 568px;
+    height: 186px;
 }
 
 .firstRow{
-    @include d-flex($js: start, $ai: start);
-    .firstArrow{
-        margin-top: 60px;
-        margin-left: -53px;
-    }
+    @include d-flex($js:start, $ai: start);
+    height: 56px;
+    width: 568px;
 }
 
-.secondRow{
-    @include d-flex();
+.thirdRow{
+    @include d-flex($js:space-evenly);
+    width: 568px;
     margin-bottom: 15px;
   
-.remote{
+.remoteWithArrow{
     background-image: url('../../assets/img/Icon Remote-2.png');
     background-repeat: no-repeat;
     background-position: left;
@@ -81,38 +89,40 @@ padding-left: 5px;
         background-image: url('../../assets/img/Icon Remote.png');
     }
 }
- 
-
     .secondArrow{
         padding-top: 40px;
-        rotate: 45deg;
+        rotate: -140deg;
+        padding-right: 20px;
     }
+    .firstArrow{
+        margin-bottom: 30px;
+    }
+    
 }
 
-.thirdRow{
-    @include d-flex();
+.secondRow{
+    @include d-flex($js: space-between);
+    height: 56px;
+    width: 568px;
     margin-bottom: 15px;
 
-.travell{
+.travell {
     background-image: url('../../assets/img/Basket.png');
     background-repeat: no-repeat;
-    background-position: left;
-    width: 335px;
-    height: 57px;
-    gap: 10px;
-    text-wrap: wrap;
-    @include d-flex();
+    background-position: left center;
+    width: 130px;
+    height: 48px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
     &:hover{
         background-image: url('../../assets/img/Basket-move.png');
     }
 }
 
     .thirdArrow{
-        padding-top: 40px;
-        rotate: 320deg;
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-   
+        padding-left: 100px;
+        rotate: 380deg;
     }
 }
 
@@ -127,9 +137,8 @@ padding-left: 5px;
         cursor: pointer;
         width: 169px;
         height: 52px;
-        padding: 15px 30px 15px 30px;
         gap: 10px;
-        opacity: 0px;
+
 
         &:hover{
             color:#E15544;
@@ -141,12 +150,10 @@ padding-left: 5px;
     width: 521px;
     height: 52px;
     gap: 10px;
+    left: 352px;
     @include d-flex($js: end)
 }
 
-.bigRed{
-    @include bigRed();
-}
 
 //---------------------Media Query----------------------------
 
@@ -158,9 +165,10 @@ padding-left: 5px;
     .myConditions{
         align-items: center;
         flex-direction: column;
+        margin-top: 25px;
     }
 
-    .firstRow{
+    .thirdRow{
         @include d-flex();
 
         .firstArrow{
@@ -169,16 +177,52 @@ padding-left: 5px;
     }
 }
 
-@media(max-width: 880px){
+@media(max-width: 1100px){
     .myPic{
         display: none;
     }
+}
+
+@media(max-width: 880px){
+.whyMe{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
  .presentation{
     text-align: center;
+    width: 90%;
  }
+
+ .toContactBtnDiv{
+    justify-content: center;
+ }
+
+ .myConditions,
+  .firstRow,
+  .secondRow,
+  .thirdRow,
+  table {
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 0;
+  }
 }
 
 @media(max-width: 580px){
+
+    table{
+        margin-top: 20px;
+        width: 80%;
+
+    }
+    // tbody{
+    //     width: 80%;
+    // }
+    .myConditions{
+        margin-top: 86px;
+        width: 90%;
+    }
     .toContactBtnDiv{
         justify-content: center;
         padding-top: 20px;
@@ -187,13 +231,27 @@ padding-left: 5px;
     .secondArrow{
         display: none;
     }
-
+    .thirdArrow{
+        display: none;
+    }
+    .firstRow{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .secondRow{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
 .locationPointer{
     width: 200px;
+    padding-left: 20px;
 }
 }
 
-@media(max-width: 420px){
+@media(max-width: 440px){
     .thirdRow{
         width: 225px;
         margin-left: 35px;
@@ -201,11 +259,17 @@ padding-left: 5px;
     .thirdArrow{
         display: none;
     }
+    table{
+        margin-top: 50px;
+    }
 }
 
 @media(max-width: 400px){
     section{
         height: 100vh;
+    }
+    table{
+       margin-top: 80px; 
     }
 }
 @media screen and (max-width: 400px) and (orientation: portrait) {

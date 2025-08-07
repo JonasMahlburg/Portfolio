@@ -1,31 +1,42 @@
 <section>
     <img  class="myPic" src="../../assets/img/IMG_1681.jpg" alt="Image of JM" data-aos="zoom-out-up">
     <div class="whyMe">
+        <h2 class="bigRed">{{'whyMe' | translate}}</h2>
         <div class="presentation">
-            <h2 class="bigRed">{{'whyMe' | translate}}</h2>
             <p>{{'whyMeText' | translate}} </p>
         </div>
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="myConditions">
-            <div>
-                <p class="myClass">{{'iAm' | translate}}</p>
-            </div>
-            <div class="conditionMarkers">
-                <div class="firstRow">
-                    <p class="locationPointer">{{'location' | translate}}</p>
-                    <img class="firstArrow" src="../../assets/img/Arrow 01.png" alt="">
-                </div>
-                <div class="secondRow">
-                    <div class="secondArrow"><img src="../../assets/img/Arrow 5.png" alt=""></div>
-                    <p class="remote">{{'remote' | translate}}</p>
-                </div>
-                <div class="thirdRow">
-                    <p class="travell">{{'travell' | translate}}</p>
-                    <div class="thirdArrow"><img src="../../assets/img/Arrow 5.png" alt=""></div>
-                </div>
+        
+            <table>
+                <tbody data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="myConditions">
+                    <tr class="firstRow">
+                        <td><p class="myClass">{{'iAm' | translate}}</p></td>
+                        <td><p class="locationPointer">{{'location' | translate}}</p></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="secondRow">
+                        <td><div class="thirdArrow"><img src="../../assets/img/Arrow 5.png" alt=""></div></td>
+                        <td></td>
+                        <td><p class="travell">{{'travell' | translate}}</p></td>
+                        <td></td>
+                    </tr>
+                    <tr class="thirdRow">
+                        <td></td>
+                        <td>
+                            <div class="remoteWithArrow">
+                                <p class="remote">{{'remote' | translate}}</p>
+                                <img class="secondArrow" src="../../assets/img/Arrow 5.png" alt="">
+                            </div>
+                        </td>
+                        <td></td>
+                        <td><img class="firstArrow" src="../../assets/img/Arrow 01.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+       
                 <div class="toContactBtnDiv">
                     <a href="#contact" class="toContactBtn">{{'contact' | translate}}</a>
                 </div>
-            </div>
-        </div>
     </div>
 </section>
+

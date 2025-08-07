@@ -1,50 +1,34 @@
 @import '../../styles.scss';
-section{
- @include d-flex($fd: column);
- margin-top: 80px;   
+section {
+  @include d-flex($fd: column);
+  margin-top: 80px;
 
-    h2{
-        @include bigRed();
-        margin-top: 100px;
-    }
-}
-nav{
-    @include d-flex;
-    gap: 5%;
-    margin-bottom: 5%;
-}
-button{
-    cursor: pointer;
-    border-color: #00f4bf;
-    width: 104px;
-    height: 54px;
-    background-color: inherit;
-    color: #E15544;
-    font-size: 20px;
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    &:hover{
-        color: #00f4bf;
-    }
-    &:active{
-        background-color: #00f4bf;
-        color: #E15544,
-    }
-
-}
-
-button.active {
-    background-color: #00f4bf;
-    color: #E15544;
-    border-width: 2px;
-    border-style: solid;
+  h2 {
+    @include bigRed();
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .singleProject:nth-child(even) {
     flex-direction: row-reverse;
 }
-// ------------------------Media Query
+// ------------------------Media Query----------------------------
 @media(max-width: 420px){
  button{
     width: 100px;
  }
+   header{
+    @include d-flex($js: center, $ai: center);
+    text-align: center;
+  }
 }

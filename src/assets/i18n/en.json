@@ -25,12 +25,12 @@
 
     "project1":{
         "image":"./assets/img/app-screens/startscreen_2.png",
-"name": "El Pollo Loco",
-"skills": "Java-Script | CSS | HTML",
-"description": "A Fun little browser-game where you defeat a giant Chicken with salsa",
-"play": "https://elpolloloco.jonas-mahlburg.de/index.html",
-"gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-"id":"1"
+        "name": "El Pollo Loco",
+        "skills": "Java-Script | CSS | HTML",
+        "description": "A Fun little browser-game where you defeat a giant Chicken with salsa",
+        "play": "https://elpolloloco.jonas-mahlburg.de/index.html",
+        "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
+        "id":"1"
     },
     "project2":{
         "image": "./assets/img/app-screens/JOIN-Screen.png",
@@ -41,42 +41,33 @@
         "gitHub": "https://github.com/JonasMahlburg/Join",
         "id":"2"
     },
-"project3":{
-    "image": "./assets/img/app-screens/Pokedex-Screen.png",
-    "name": "Pokedex",
-    "skills": "Rest API | Java-Script | CSS | HTML",
-    "description": "Collection of the 1.Gen Pokemon using Rest API",
-    "play": "https://pokedex.jonas-mahlburg.de/index.html",
-    "gitHub": "https://github.com/JonasMahlburg/Pokedex",
-    "id":"3"
-},
-  "project4":{
-      "image": "./assets/img/app-screens/KanMind.png",
-      "name": "KanMind",
-      "skills": "PYTHON | Django | Rest_Framework",
-      "description": "A Backend-Database, for a Canban-Board written with Django_Rest_Framework",
-      "play": "https://kanmind-site.jonas-mahlburg.de",
-      "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
-      "id":"4"
-  },
+    "project3":{
+        "image": "./assets/img/app-screens/KanMind.png",
+        "name": "KanMind",
+        "skills": "PYTHON | Django | Rest_Framework",
+        "description": "A Backend-Database, for a Canban-Board written with Django_Rest_Framework",
+        "play": "https://kanmind-site.jonas-mahlburg.de",
+        "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
+        "id":"4"
+    },
+      "project4":{
+        "image": "./assets/img/app-screens/Coderr.png",
+        "name": "Coderr",
+        "skills": "PYTHON | Django | Rest_Framework",
+        "description": "A Backend-Database, for a Service platform written with Django_Rest_Framework",
+        "play": "https://coderr-site.jonas-mahlburg.de",
+        "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
+        "id":"5"
+    },
     "project5":{
-      "image": "./assets/img/app-screens/Coderr.png",
-      "name": "Coderr",
-      "skills": "PYTHON | Django | Rest_Framework",
-      "description": "A Backend-Database, for a Service platform written with Django_Rest_Framework",
-      "play": "https://coderr-site.jonas-mahlburg.de",
-      "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
-      "id":"5"
+      "image": "./assets/img/app-screens/coming_soon.png",
+      "name": "Videoflix",
+      "skills": "PYTHON | Django | Rest_Framework | Angular",
+      "description": "A full-stack project with a video player for streaming movies.",
+      "play": "/error",
+      "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
+      "id":"6"
   },
-  "project6":{
-    "image": "./assets/img/app-screens/coming_soon.png",
-    "name": "Videoflix",
-    "skills": "PYTHON | Django | Rest_Framework | Angular",
-    "description": "A full-stack project with a video player for streaming movies.",
-    "play": "/error",
-    "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
-    "id":"6"
-},
 
 "comment1":   {
     "name": "Mailo Mittelstädt",

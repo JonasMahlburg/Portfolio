@@ -67,33 +67,8 @@ export class ProjectsComponent {
     gitHub: "project5.gitHub",
     id: 5,
   },
-        {
-    image:"project6.image",
-    title: "project6.name",
-    skills: "project6.skills",
-    description: "project6.description",
-    play: "project6.play",
-    gitHub: "project6.gitHub",
-    id: 5,
-  },
   ];
 
   visibleProjects = [...this.projects];
-  activeFilter: 'all' | 'frontend' | 'backend' = 'all';
-
-  switchToFrontend() {
-    this.visibleProjects = this.projects.filter(p => p.id >= 1 && p.id <= 3);
-    this.activeFilter = 'frontend';
-  }
-
-  switchToBackend() {
-    this.visibleProjects = this.projects.filter(p => p.id >= 4 && p.id <= 5);
-    this.activeFilter = 'backend';
-  }
-
-  showAll() {
-    this.visibleProjects = [...this.projects];
-    this.activeFilter = 'all';
-  }
 
 }

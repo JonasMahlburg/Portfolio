@@ -33,6 +33,11 @@ export class SkillsComponent {
     { src: './assets/img/skills/Django-mobile.png', mobileSrc: './assets/img/skills/Django-mobile.png', alt: 'Django', category: 'backend' },
     { src: './assets/img/skills/Linux.png', mobileSrc: './assets/img/skills/Linux-mobile.png', alt: 'Linux', category: 'backend' },
     { src: './assets/img/skills/Docker.png', mobileSrc: './assets/img/skills/Docker-mobile.png', alt: 'Docker', category: 'backend' },
+        { src: './assets/img/skills/Cloud.png', mobileSrc: './assets/img/skills/Cloud.png', alt: 'Cloud', category: 'backend' },
+    { src: './assets/img/skills/PostgreSQL.png', mobileSrc: './assets/img/skills/PostgreSQL.png', alt: 'PostgreSQL', category: 'backend' },
+    { src: './assets/img/skills/Redis.png', mobileSrc: './assets/img/skills/Redis.png', alt: 'Redis', category: 'backend' },
+    { src: './assets/img/skills/SQL.png', mobileSrc: './assets/img/skills/SQL.png', alt: 'SQL', category: 'backend' },
+
     // { src: './assets/img/skills/Icons Skills-8.png', mobileSrc: './assets/img/skills/Icons Skills-8.png', alt: 'Challenge Me?', category: 'other' },
   ];
 

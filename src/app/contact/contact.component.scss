@@ -6,7 +6,8 @@ section {
   color: #00f4bf;
   @include d-flex();
   flex-direction: column;
-  height: 50vh;
+  height: 80vh;
+  width: 100%;
 }
 
 .contact{
@@ -173,6 +174,7 @@ textarea.invalid-input {
     cursor: pointer;
     height: 0;
     width: 0;
+    background-color: #00f4bf;
   }
 
   .checkmark {
@@ -186,19 +188,24 @@ textarea.invalid-input {
     transition: background 0.2s;
   }
 
+  // Standard: Rahmen bleibt rot
   input[type="checkbox"]:checked ~ .checkmark {
     background-color: #00f4bf;
-    border-color: #00f4bf;
+    border-color: #E15544;
   }
 
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
+    background-color: #00f4bf;
   }
 
+  // Haken wird rot angezeigt, wenn angehakt
   input[type="checkbox"]:checked ~ .checkmark:after {
     display: block;
+    border-color: #E15544;
+    background-color: #00f4bf;
   }
 
   .checkmark:after {
@@ -206,7 +213,7 @@ textarea.invalid-input {
     top: 3px;
     width: 7px;
     height: 14px;
-    border: solid #fff;
+    border: solid #E15544;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     content: "";
@@ -275,7 +282,21 @@ a{
 //----------------Media Querry------------
 
 @media(max-width: 950px){
-form{
+  section{
+    height: 100vh;
+  }
+
+  .headline{
+    img{
+      display: none;
+    }
+  }
+
+  .container{
+    width: 100%
+  }
+
+  form{
   padding-left: 0;
 
   .smallInput{
@@ -284,7 +305,15 @@ form{
   }
 }
 
+  .contact{
+    align-items: center;
+    margin-bottom: 36px;
+    width: 100%;
+  }
 
+  .contactInfo{
+    margin-top: 35px;
+  }
 
   .information{
     flex-direction: column;
@@ -299,10 +328,39 @@ form{
   }
 
 .submitArea{
-@include d-flex($fd: column, $g: 10px)
+@include d-flex($g: 10px, $fd: column);
+width: 60%;
+
+.textAndCheckbox{
+  @include d-flex;
+}
+input[type="submit"]{
+margin-left: 0;
+  }
 }
 }
 
+
+@media(max-width: 700px) {
+  .information {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+  }
+  .textPart,
+  .contactInfo {
+    width: 100%;
+    max-width: 100%;
+        .email{
+      width: 90%;
+    }
+    .tel{
+      width: 90%;
+
+    }
+  }
+}
 
 @media(max-width: 580px){
   .headline{
@@ -317,6 +375,27 @@ form{
     .textPart{
       padding-bottom: 15px;
     }
+.contactInfo{
+  .email{
+    flex-direction: column;
+    background-image: none;
+    margin-bottom: 30px;
+    justify-content: center;
   }
+  .tel{
+    flex-direction: column;
+    background-image: none;
+    margin-bottom: 30px;
+    justify-content: center;
+
+  }
+}
+
+  }
+  .inputArea{
+    margin-top: 50px;
+    padding-right: 0;
+  }
+
 }
 

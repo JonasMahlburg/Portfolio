@@ -47,39 +47,6 @@ h2{
     }
 }
 
-nav{
-    @include d-flex;
-    gap: 5%;
-    margin-bottom: 5%;
-}
-
-button{
-    cursor: pointer;
-    border-color: #00f4bf;
-    width: 104px;
-    height: 82px;
-    background-color: inherit;
-    color: #E15544;
-    font-size: 20px;
-
-    &:hover{
-        color: #00f4bf;
-    }
-    &:active{
-        background-color: #00f4bf;
-        color: #E15544,
-    }
-}
-
-button.active {
-  background-color: #00f4bf;
-  color: #E15544;
-  border-width: 2px;
-  border-style: solid;
-}
-
-
-
 //-----------------------------Media Query---------------------
 
 @media(max-width: 1080px){

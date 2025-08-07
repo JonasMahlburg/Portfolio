@@ -41,6 +41,6 @@ html{
   }
 
   @mixin fonts($fs, $fw){
-    font-size: $fs;
-    font-weight: $fw;
+    font-size: $fs !important;
+    font-weight: $fw !important;
   }

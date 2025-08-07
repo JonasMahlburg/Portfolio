@@ -42,10 +42,12 @@
                     <label class="custom-checkbox">
                         <input type="checkbox" name="privacyPolicyCheck" id="privacyPolicyCheck" value="privacyPolicy" required #privacyPolicyCheck="ngModel"  [(ngModel)]="contactData.privacyPolicyAccepted">
                         <span class="checkmark"></span>
-                    </label>
-                    <label for="privacyPolicyCheck">
-                        {{'policyText1' | translate}}<a routerLink="PrivacyPolicy">{{'privacyPolicy.title' | translate}}</a>{{'policyText2' | translate}}
-                    </label>
+                        <span class="checkbox-text">
+                          {{'policyText1' | translate}}
+                          <a routerLink="PrivacyPolicy">{{'privacyPolicy.title' | translate}}</a>
+                          {{'policyText2' | translate}}
+                        </span>
+                      </label>
                 </div>
                 <div>
                     <input type="submit" value="Send" [disabled]="!contactForm.valid">

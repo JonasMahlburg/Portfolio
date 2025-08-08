@@ -2,7 +2,7 @@
     "whyMe": "Why Me",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact",
+    "contact": "CONTACT ME",
     "title": "Fullstack-Developer",
     "whyMeText": "I am a passionate web developer who is always seeking new challenges. I am quick to get up to speed on complex projects and expand them further. This makes me a valuable member of your team.",
     "iAm": "I am",
@@ -117,7 +117,10 @@
   "contactForm": {
     "namePlaceholder": "Your name...",
     "emailPlaceholder": "Your email address...",
-    "messagePlaceholder": "Write something..."
+    "messagePlaceholder": "Write something...",
+    "invalidName": "Please enter your name.",
+    "invalidEmail": "Please Enter a valid Emailadress.",
+    "invalidMessage": "Please write something."
   }
 
 

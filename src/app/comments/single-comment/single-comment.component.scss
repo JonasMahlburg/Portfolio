@@ -2,8 +2,7 @@
 .Singlecomment {
     width: 297px;
     min-height: 200px; 
-    // border: 2px solid #E15544;
-    // border-radius: 15px;
+
     @include d-flex($fd: column);
     color: #00f4bf;
 

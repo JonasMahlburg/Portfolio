@@ -2,7 +2,7 @@
 
 section{
     width: 100%;
-    height: 65vh;
+    height: 100vh;
     margin-top: 50px;
 @include d-flex($fd: column);
 
@@ -31,8 +31,8 @@ h2{
     flex-wrap: wrap;
 
     .mobileImg{
-        width: 45px;
-        height: 45px;
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -51,9 +51,23 @@ h2{
 
 @media(max-width: 1080px){
     section{
-        height: 60vh;
+        height: 100vh;
     }
 }
+
+@media(max-width: 780px){
+    .mobileMessage{
+        margin-top: 0;
+        margin-bottom: 90px;
+    }
+    .skillTree{
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
 
 @media(max-width: 580px){
     .skillTree{

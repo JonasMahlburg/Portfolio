@@ -252,10 +252,7 @@ tbody{
 }
 
 @media(max-width: 440px){
-    .thirdRow{
-        width: 225px;
-        margin-left: 35px;
-    }
+ 
     .thirdArrow{
         display: none;
     }
@@ -271,6 +268,17 @@ tbody{
     table{
        margin-top: 80px; 
     }
+  .locationPointer,
+  .remoteWithArrow,
+  .travell {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    padding-left: 54px;
+  
+  }
+
 }
 @media screen and (max-width: 400px) and (orientation: portrait) {
       section {

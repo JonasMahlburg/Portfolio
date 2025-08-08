@@ -22,19 +22,24 @@
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="inputArea">
                 <div class="smallInput">
-                    <input [ngClass]="{redBorder: !name.valid && name.touched, greenBorder: name.valid && name.touched}"
-                        #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname"
-                        placeholder="{{'contactForm.namePlaceholder' | translate}}" required pattern="^[a-zA-Z]+( [a-zA-Z]+)?$">
+                    <input [ngClass]="{redBorder: !name.valid && name.touched, redText: !name.valid && name.touched, greenBorder: name.valid && name.touched}" #name="ngModel"
+                        [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" [placeholder]="(!name.valid && name.touched) 
+                            ? ('contactForm.invalidName' | translate) 
+                            : ('contactForm.namePlaceholder' | translate)" required pattern="^[a-zA-Z]+( [a-zA-Z]+)?$">
                     <input
-                        [ngClass]="{redBorder: !email.valid && email.touched, greenBorder: email.valid && email.touched}"
+                        [ngClass]="{redBorder: !email.valid && email.touched, redText: !email.valid && email.touched, greenBorder: email.valid && email.touched}"
                         #email="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email"
-                        placeholder= "{{'contactForm.emailPlaceholder' | translate}}" required
+                        [placeholder]="(!email.valid && email.touched) 
+                            ? ('contactForm.invalidEmail' | translate) 
+                            : ('contactForm.emailPlaceholder' | translate)" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
                 <textarea minlength="4"
-                    [ngClass]="{redBorder: !message.valid && message.touched, greenBorder: message.valid && message.touched}"
+                    [ngClass]="{redBorder: !message.valid && message.touched, redText: !message.valid && message.touched, greenBorder: message.valid && message.touched}"
                     #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject"
-                    placeholder="{{'contactForm.messagePlaceholder' | translate}}" style="height:200px" required></textarea>
+                    [placeholder]="(!message.valid && message.touched) 
+                        ? ('contactForm.invalidMessage' | translate) 
+                        : ('contactForm.messagePlaceholder' | translate)" style="height:200px" required></textarea>
             </div>
 
             <div class="submitArea">

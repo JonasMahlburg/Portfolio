@@ -4,8 +4,20 @@ footer {
   height: 200px;
   gap: 16px;
   opacity: 0px;
-@include d-flex($fd: column);
+  @include d-flex($fd: column);
   color: #e15544;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px; // Passe ggf. an dein Projekt an
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px; // Optional für etwas Abstand am Rand
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footerTop {
@@ -14,10 +26,20 @@ width: 100%;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  color: #E15544; 
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'RobotoMono', monospace;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 4px 0 6px 0;
+  height: auto;
+  width: auto;
   object-fit: contain;
-  padding: 4px 0px 6px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .linkSection {

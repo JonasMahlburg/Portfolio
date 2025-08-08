@@ -22,6 +22,7 @@ img {
 .title{
     @include fonts(48px, 700);
     margin-bottom: 0;
+    margin-top: 0
 }
 
 .skills{
@@ -34,9 +35,9 @@ img {
 
 .play {
     background-color: #00F4BF;
-    width: 104px;
-    height: 52px;
-    // padding: 15px 30px 15px 30px;
+    width: 98px;
+    height: 22px;
+    padding: 15px 30px 15px 30px;
     text-decoration: none;
     @include fonts(18px, 500);
     @include d-flex($g: 10px);
@@ -48,11 +49,11 @@ img {
 }
 
 .gitHub {
-    width: 104px;
-    height: 52px;
+    width: 65px;
+    height: 22px;
     @include d-flex($g: 10px);
     color: #E15544;
-    // padding: 15px 30px 15px 30px;
+    padding: 15px 30px 15px 30px;
     border: 1px solid #00F4BF;
     @include fonts(18px, 500);
     text-decoration: none;
@@ -62,14 +63,21 @@ img {
         color: #00F4BF
     }
 }
+
+section{
+        width: 498px;
+    height: 318px;
+        gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
 .linkSection{
     @include d-flex();
     gap: 24px;
 }
 
 .infoSection{
-    width: 498px;
-    height: 318px;
     text-wrap: wrap;
     @include d-flex($fd: column, $ai: flex-start);
 }
@@ -91,6 +99,12 @@ img {
     .infoSection{
         width: 100%;
         @include d-flex($fd: column);
+    }
+}
+
+@media(max-width: 500px){
+    section{
+        width: 100%;
     }
 }
 

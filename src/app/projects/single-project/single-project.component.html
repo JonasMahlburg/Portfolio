@@ -1,15 +1,18 @@
-<div data-aos="flip-left"
+ <div data-aos="flip-left"
 data-aos-easing="ease-out-cubic"
 data-aos-duration="2000" class="singleProject" [ngClass]="{ evenP:singleProject.id % 2 ==0, oddP:singleProject.id % 2 !=0}">
+  <section>
     <div class="infoSection">
         <p class="title">{{ singleProject.title | translate }}</p>
         <p class="skills">{{ singleProject.skills | translate }}</p>
         <p class="description">{{ singleProject.description | translate }}</p>
-        <div class="linkSection">
+    </div>
+    <div class="linkSection">
           <a class="gitHub" href="{{ singleProject.gitHub | translate}}" target="_blank">GitHub</a>
           <a class="play" href="{{ singleProject.play | translate}}" target="_blank">LIVE TEST</a>
-        </div>
     </div>
-  <img src="{{ singleProject.image | translate }}" alt=""/>
-</div>
+  </section>
 
+    
+  <img src="{{ singleProject.image | translate }}" alt=""/>
+</div> 

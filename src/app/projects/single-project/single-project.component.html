@@ -1,6 +1,10 @@
- <div data-aos="flip-left"
-data-aos-easing="ease-out-cubic"
-data-aos-duration="2000" class="singleProject" [ngClass]="{ evenP:singleProject.id % 2 ==0, oddP:singleProject.id % 2 !=0}">
+<div
+  [attr.data-aos]="aosAnimation"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000"
+  class="singleProject"
+  [ngClass]="{ evenP:singleProject.id % 2 ==0, oddP:singleProject.id % 2 !=0 }"
+>
   <section>
     <div class="infoSection">
         <p class="title">{{ singleProject.title | translate }}</p>
@@ -12,7 +16,5 @@ data-aos-duration="2000" class="singleProject" [ngClass]="{ evenP:singleProject.
           <a class="play" href="{{ singleProject.play | translate}}" target="_blank">LIVE TEST</a>
     </div>
   </section>
-
-    
   <img src="{{ singleProject.image | translate }}" alt=""/>
-</div> 
+</div>

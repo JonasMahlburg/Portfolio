@@ -61,14 +61,14 @@ nav {
 
 .nav-container {
   width: 100%;
-  max-width: 1200px; // wie in styles.scss für section
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
   box-sizing: border-box;
-  padding: 0 20px; // optional, für etwas Abstand am Rand
+  padding: 0 20px; 
 }
 
 .navigation{
@@ -79,10 +79,12 @@ nav {
 a{
   
     text-decoration: none;
+    transition: 0.5s;
 
     &:hover{
         color:#00F4BF;
         cursor: pointer;
+        text-decoration: underline;
     }
 }
 
@@ -118,7 +120,7 @@ background-color: inherit;
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 100%;
     height: 100vh;
     background-color: #0B042F;
     @include d-flex($fd: column, $d: flex);
@@ -172,7 +174,10 @@ nav{
     display: none;
 }
 .navigation{
-    display: none;
+  .links{
+     display: none;
+  }
+   
 }
 .burgerMenu{
     display:flex;

@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, inject, Input} from '@angular/core';
+import { Component, inject, Input, HostListener, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../translation.service';
 
@@ -10,19 +10,34 @@ import { TranslationService } from '../../translation.service';
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss'
 })
-export class SingleProjectComponent {
+export class SingleProjectComponent implements OnInit {
   translate = inject(TranslationService);
-@Input() singleProject!: {
-  image: string;
-  title: string;
-  skills: string;
-  description: string;
-  play: string;
-  gitHub: string;
-id: number;
+
+  @Input() singleProject!: {
+    image: string;
+    title: string;
+    skills: string;
+    description: string;
+    play: string;
+    gitHub: string;
+    id: number;
+  };
+
+  aosAnimation = 'flip-left';
+
+  ngOnInit() {
+    this.setAosAnimation(window.innerWidth);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.setAosAnimation(event.target.innerWidth);
+  }
+
+  setAosAnimation(width: number) {
+    this.aosAnimation = width < 700 ? 'fade-up' : 'flip-left';
+  }
 }
 
-}
- 
 
 

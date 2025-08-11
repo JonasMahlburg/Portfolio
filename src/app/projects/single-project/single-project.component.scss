@@ -102,9 +102,20 @@ section{
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 514px){
     section{
         width: 100%;
     }
+    img{
+        width: 100%;
+    }
+      .linkSection{
+    gap: 22px;
+  }
 }
 
+@media(max-width: 322px){
+          .linkSection{
+    gap: 20px;
+  }
+}

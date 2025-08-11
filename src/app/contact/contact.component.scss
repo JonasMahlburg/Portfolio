@@ -12,7 +12,7 @@ section {
 
 .contact{
   height: 162px;
-  width: 1015px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
@@ -75,7 +75,7 @@ form {
   .smallInput {
     @include d-flex($g: 30px, $fd: column);
    width: 50%;
-   padding-left: 5%;
+  
  
   }
 
@@ -152,14 +152,13 @@ textarea.invalid-input {
 }
 
 .submitArea{
-  @include d-flex()
+  @include d-flex($js: space-between);
+  width: 100%;
 }
 
 .inputArea {
   @include d-flex($g: 40px);
-  width: 90%;
-  padding-right: 5%;
-  ;
+  width: 100%;
 }
 
 .custom-checkbox {
@@ -190,7 +189,7 @@ textarea.invalid-input {
     transition: background 0.2s;
   }
 
-  // Standard: Rahmen bleibt rot
+  
   input[type="checkbox"]:checked ~ .checkmark {
     background-color: #00f4bf;
     border-color: #E15544;
@@ -203,7 +202,6 @@ textarea.invalid-input {
     background-color: #00f4bf;
   }
 
-  // Haken wird rot angezeigt, wenn angehakt
   input[type="checkbox"]:checked ~ .checkmark:after {
     display: block;
     border-color: #E15544;
@@ -282,6 +280,12 @@ a{
 }
 
 //----------------Media Querry------------
+
+@media(max-width: 1250px){
+section{
+  width: 95%;
+}
+}
 
 @media(max-width: 950px){
   section{
@@ -376,6 +380,10 @@ margin-left: 0;
 }
 
 @media(max-width: 390px){
+  .headline{
+    width: 100%;
+  }
+  
   .information{
     .textPart{
       padding-bottom: 15px;

@@ -1,11 +1,14 @@
 <nav>
   <div class="nav-container">
-    <a href="#landingPage"><img class="logoMobile" src="./assets/img/logoNew.png" alt="Logo"></a>
     <div class="navigation">
+      <div><a href="#landingPage"><img class="logoMobile" src="./assets/img/logoNew.png" alt="Logo"></a></div>
+      <div class="links">
       <a href="#why_Me">{{'whyMe' | translate}}</a>
       <a href="#skills">{{'skills' | translate}}</a>
       <a href="#projects">{{'projects' | translate}}</a>
       <a href="#contact">{{'contact' | translate}}</a>
+      </div>
+
     </div>
     <div class="burgerMenu" (click)="toggleMenu()">
       &#9776;

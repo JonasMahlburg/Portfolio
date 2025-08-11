@@ -57,6 +57,10 @@ nav {
     rgba(11, 4, 45, 0.2)
   );
   z-index: 1000;
+
+  .links{
+    @include d-flex()
+  }
 }
 
 .nav-container {
@@ -72,8 +76,14 @@ nav {
 }
 
 .navigation{
-    @include d-flex();
+    @include d-flex($js: space-between);
     gap: 30px;
+    width: 636px;
+
+    .links{
+      @include d-flex($js: space-between);
+      width: 464px
+    }
 }
 
 a{
@@ -165,7 +175,7 @@ background-color: inherit;
 
 //----------------------Media Query-----------------------------------------------
 
-@media(max-width: 770px){
+@media(max-width: 780px){
 nav{
     justify-content: space-between;
 }

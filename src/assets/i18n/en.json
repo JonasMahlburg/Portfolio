@@ -3,6 +3,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "CONTACT ME",
+    "contact_nav": "Contact",
     "title": "Fullstack-Developer",
     "whyMeText": "I am a passionate web developer who is always seeking new challenges. I am quick to get up to speed on complex projects and expand them further. This makes me a valuable member of your team.",
     "iAm": "I am",
@@ -23,41 +24,41 @@
     "error": "Back",
 
 
-    "project1":{
+    "project4":{
         "image":"./assets/img/app-screens/startscreen_2.png",
         "name": "El Pollo Loco",
         "skills": "Java-Script | CSS | HTML",
         "description": "A Fun little browser-game where you defeat a giant Chicken with salsa",
         "play": "https://elpolloloco.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-        "id":"1"
+        "id":"4"
     },
-    "project2":{
+    "project3":{
         "image": "./assets/img/app-screens/JOIN-Screen.png",
         "name": "Join",
         "skills": "Firebase | Java-Script | CSS | HTML",
         "description": "A Web-app with Databank to organize and visualize Team projects",
         "play": "https://join.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/Join",
-        "id":"2"
+        "id":"3"
     },
-    "project3":{
+    "project2":{
         "image": "./assets/img/app-screens/KanMind.png",
         "name": "KanMind",
         "skills": "PYTHON | Django | Rest_Framework",
         "description": "A Backend-Database, for a Canban-Board written with Django_Rest_Framework",
         "play": "https://kanmind-site.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
-        "id":"4"
+        "id":"2"
     },
-      "project4":{
+      "project1":{
         "image": "./assets/img/app-screens/Coderr.png",
         "name": "Coderr",
         "skills": "PYTHON | Django | Rest_Framework",
         "description": "A Backend-Database, for a Service platform written with Django_Rest_Framework",
         "play": "https://coderr-site.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
-        "id":"5"
+        "id":"1"
     },
     "project5":{
       "image": "./assets/img/app-screens/coming_soon.png",
@@ -66,7 +67,7 @@
       "description": "A full-stack project with a video player for streaming movies.",
       "play": "/error",
       "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
-      "id":"6"
+      "id":"5"
   },
 
 "comment1":   {

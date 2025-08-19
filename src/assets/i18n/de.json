@@ -3,6 +3,7 @@
     "skills": "Skills",
     "projects": "Projekte",
     "contact": "KONTAKT",
+    "contact_nav": "Kontakt",
     "title": "Fullstack-Entwickler",
     "whyMeText": "Ich bin leidenschaftlicher Entwickler und suche stets nach neuen Herausforderungen. Ich kann mich schnell in komplexe Projekte einarbeiten und diese ausbauen. Dies macht mich zu einem guten Mitglied Ihres Teams",
     "iAm": "Ich",
@@ -23,41 +24,41 @@
     "error": "zurück",
 
 
-    "project1":{
+    "project4":{
         "image":"./assets/img/app-screens/startscreen_2.png",
         "name": "El Pollo Loco",
         "skills": "Java-Script | CSS | HTML",
         "description": "Ein lustiges Jump and Run Spiel, in dem man ein riesiges Hühnchen mit Salsaflaschen besiegen muss",
         "play": "https://elpolloloco.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-        "id":"1"
+        "id":"4"
         },
-    "project2":{
+    "project3":{
         "image": "./assets/img/app-screens/JOIN-Screen.png",
         "name": "Join",
         "skills": "Firebase | Java-Script | CSS | HTML",
         "description": "Eine Web-Applikation mit Datenbank zum Organisieren und Visualisieren von Arbeitsabläufen",
         "play": "https://join.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/Join",
-        "id":"2"
+        "id":"3"
     },
-    "project3":{
+    "project2":{
         "image": "./assets/img/app-screens/KanMind.png",
         "name": "KanMind",
         "skills": "PYTHON | Django | Rest_Framework",
         "description": "Ein Backend, für ein Kanban-Board geschrieben in Django_Rest_Framework",
         "play": "https://kanmind-site.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
-        "id":"4"
+        "id":"2"
     },
-    "project4":{
+    "project1":{
         "image": "./assets/img/app-screens/Coderr.png",
         "name": "Coderr",
         "skills": "PYTHON | Django | Rest_Framework",
         "description": "Ein Backend, für eine Dienstleistungs-Plattform  geschrieben in Django_Rest_Framework",
         "play": "https://coderr-site.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
-        "id":"5"
+        "id":"1"
     },
     "project5":{
         "image": "./assets/img/app-screens/coming_soon.png",
@@ -66,7 +67,7 @@
         "description": "Ein Full-Stack Projekt, mit Videoplayer fürs Filme streamen",
         "play": "/error",
         "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
-        "id":"6"
+        "id":"5"
     },
 
 "comment1":{

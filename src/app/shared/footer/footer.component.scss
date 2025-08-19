@@ -8,20 +8,13 @@ footer {
   color: #e15544;
 }
 
-.footer-container {
-  width: 100%;
-  max-width: 1200px; // Passe ggf. an dein Projekt an
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 20px; // Optional für etwas Abstand am Rand
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.footer-div {
+ max-width: 1200px; 
+width: 100%;
 }
 
 .footerTop {
-  @include d-flex($js: space-around);
+  @include d-flex($js: space-between);
 width: 100%;
 }
 
@@ -40,6 +33,9 @@ width: 100%;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  &:hover{
+      color: #00f4bf;
+    }
 }
 
 .linkSection {

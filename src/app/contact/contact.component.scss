@@ -37,7 +37,8 @@ section {
 }
 
 .information {
-  @include d-flex();
+  @include d-flex($js: space-between);
+  width: 100%;
 
 
   .textPart {
@@ -45,6 +46,10 @@ section {
     width: 504px;
     height: 72px;
   }
+
+  .contactInfo{
+    @include d-flex($ai: flex-start, $fd: column);
+    width: 50%;
 
   .email {
     background-image: url("../../assets/img/contact-img/icon\ _email_.png");
@@ -66,6 +71,9 @@ section {
     background-size: contain;
     @include d-flex($js: space-evenly);
   }
+  }
+
+
 }
 form {
   @include d-flex($g: 30px, $fd: column);
@@ -84,7 +92,7 @@ input[type="text"] {
   border: 1px solid #00f4bf;
   padding-left: 10px;
   width: 100%;
-  height: 84px;
+  height: 56px;
   color: #00f4bf;
   font-family: 'RobotoMono';
 }

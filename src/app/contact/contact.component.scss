@@ -21,18 +21,24 @@ section {
 .container{
   width: 100%;
 }
-
 .headline {
-  @include d-flex();
-  @include bigRed();
-  width: 330px;
-  height: 60px;
-  margin-bottom: 15px;
-  size: 54px;
+  @include d-flex($js: flex-start, $g: 10px);
+  width: 425px;
+  height: 72px;
+
+  .contactText {
+    @include bigRed($fs: 54px, $fw: 500);
+    @include d-flex();
+    width: 330px;
+    height: 60px;
+  }
 
   img {
-    rotate: -60deg;
-    transform: scaleX(-1);
+    width: 80px;
+    height: 60px;
+    rotate: 0deg;
+    position: relative;
+    top: 18px;
   }
 }
 
@@ -233,7 +239,7 @@ textarea.invalid-input {
   border-color: red !important;
 background-image: url('../../assets/img/Privacy-Policy/done_error.png');
 background-repeat: no-repeat;
-background-position: right 16px top 24px;
+background-position: right 16px top 10px;
 color: red !important;
 }
 
@@ -241,7 +247,7 @@ color: red !important;
   border-color: green !important;
   background-image: url('../../assets/img/Privacy-Policy/done_correct.png');
   background-repeat: no-repeat;
-  background-position: right 16px top 24px;
+  background-position: right 16px top 10px;
 }
 
 .errorSpan{
@@ -301,6 +307,7 @@ section{
   }
 
   .headline{
+    justify-content: center;
     img{
       display: none;
     }
@@ -327,6 +334,8 @@ section{
 
   .contactInfo{
     margin-top: 35px;
+    align-items: center;
+    width: 100%;
   }
 
   .information{
@@ -381,16 +390,37 @@ margin-left: 0;
 
 @media(max-width: 580px){
   .headline{
+    width: 100%;
     img{
       display: none;
     }
   }
+  .information{
+  .contactInfo{
+    width: 90%;
+  .email{
+    width: 100%;
+    padding-left: 0;
+  }
+  .tel{
+    width: 100%;
+    padding-left: 0;
+  }
+  }
+  }
+  
+
+
 }
 
-@media(max-width: 390px){
+@media(max-width: 420px){
   .headline{
     width: 100%;
+    .contactText{
+      width: 100%;
+    }
   }
+
   
   .information{
     .textPart{
@@ -436,4 +466,11 @@ margin-left: 0;
   pointer-events: none;
   z-index: 2;
 }
+@media(max-width: 360px) {
+  .headline {
+    .contactText {
+      font-size: 35px;
+    }
 
+  }
+}

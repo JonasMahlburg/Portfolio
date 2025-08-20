@@ -108,8 +108,14 @@ padding-right: 30px;
     width: 100%;
   }
   .profilePicture{
-    width: 30%;
+    width: 40%;
 
+  }
+  .myName{
+    font-size: 66px;
+  }
+  .jobTitle{
+    font-size: 44px;
   }
 }
 
@@ -129,9 +135,13 @@ padding-right: 30px;
 section{
   flex-direction: column-reverse;
   align-items: center;
+  justify-content: center;
+  
 }
-.text-Part{
+.text-Part {
   width: 100%;
+  justify-content: start;
+  align-items: center;
   .buttons{
     display: none;
   }
@@ -141,9 +151,9 @@ section{
   }
 }
 .profilePicture{
-  width: 60%;
-  height: 70%;
-  margin-bottom: 20px;
+  width: 50%;
+  height: 50%;
+  
 }
 
 }

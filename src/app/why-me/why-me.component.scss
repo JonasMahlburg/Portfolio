@@ -2,9 +2,7 @@
 
 section{
 @include d-flex();
-height: 100vh;
 max-width: 1224px;
-
 }
 
 tbody{
@@ -203,22 +201,20 @@ tbody{
   .secondRow,
   .thirdRow,
   table {
-    width: 100% !important;
+    // width: 100% !important;
     max-width: 100%;
     min-width: 0;
   }
 }
 
-@media(max-width: 580px){
+@media(max-width: 590px){
 
     table{
         margin-top: 20px;
         width: 80%;
+        @include d-flex()
 
     }
-    // tbody{
-    //     width: 80%;
-    // }
     .myConditions{
         margin-top: 86px;
         width: 90%;
@@ -279,9 +275,4 @@ tbody{
   
   }
 
-}
-@media screen and (max-width: 400px) and (orientation: portrait) {
-      section {
-        margin-bottom: 200px;
-    }
 }

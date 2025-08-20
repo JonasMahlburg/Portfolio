@@ -1,5 +1,7 @@
-*{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import "../../styles.scss";
+
+section {
+    @include d-flex($fd: column);
+    width: 100%;
+    max-width: 1200px;
 }

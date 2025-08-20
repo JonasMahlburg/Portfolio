@@ -2,15 +2,12 @@
 footer {
   width: 100%;
   height: 200px;
-  gap: 16px;
-  opacity: 0px;
-  @include d-flex($fd: column);
+  @include d-flex($fd: column, $g: 16px);
   color: #e15544;
 }
-
 .footer-div {
- max-width: 1200px; 
-width: 100%;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .footerTop {
@@ -101,11 +98,16 @@ width: 100%;
 
 
 //----------------media querry----------------------
+@media(max-width: 1220px){
+  .footerTop{
+    justify-content: space-around;
+  }
+}
 
 @media(max-width: 590px){
-footer{
-  margin-top: 150px;
-}
+// footer{
+//   margin-top: 150px;
+// }
 
   .footerTop{
     flex-direction: column;

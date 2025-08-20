@@ -25,50 +25,50 @@
     "error": "Back",
 
 
-    "project4":{
-        "image":"./assets/img/app-screens/startscreen_2.png",
+    "project5":{
+        "image":"./assets/img/app-screens/PolloLocco.png",
         "name": "El Pollo Loco",
         "skills": "Java-Script | CSS | HTML",
         "description": "A Fun little browser-game where you defeat a giant Chicken with salsa",
         "play": "https://elpolloloco.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/El-Pollo-Loco",
-        "id":"4"
+        "id":"5"
     },
-    "project3":{
-        "image": "./assets/img/app-screens/JOIN-Screen.png",
+    "project4":{
+        "image": "./assets/img/app-screens/Join.png",
         "name": "Join",
         "skills": "Firebase | Java-Script | CSS | HTML",
         "description": "A Web-app with Databank to organize and visualize Team projects",
         "play": "https://join.jonas-mahlburg.de/index.html",
         "gitHub": "https://github.com/JonasMahlburg/Join",
-        "id":"3"
+        "id":"4"
     },
-    "project2":{
+    "project3":{
         "image": "./assets/img/app-screens/KanMind.png",
         "name": "KanMind",
         "skills": "PYTHON | Django | Rest_Framework",
         "description": "A Backend-Database, for a Canban-Board written with Django_Rest_Framework",
         "play": "https://kanmind-site.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/KanMind_Backend",
-        "id":"2"
+        "id":"3"
     },
-      "project1":{
+      "project2":{
         "image": "./assets/img/app-screens/Coderr.png",
         "name": "Coderr",
         "skills": "PYTHON | Django | Rest_Framework",
         "description": "A Backend-Database, for a Service platform written with Django_Rest_Framework",
         "play": "https://coderr-site.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/Coderr_Backend",
-        "id":"1"
+        "id":"2"
     },
-    "project5":{
-      "image": "./assets/img/app-screens/coming_soon.png",
+    "project1":{
+      "image": "./assets/img/app-screens/Videoflix.png",
       "name": "Videoflix",
       "skills": "PYTHON | Django | Rest_Framework | Angular",
       "description": "A full-stack project with a video player for streaming movies.",
       "play": "/error",
       "gitHub": "https://github.com/JonasMahlburg/Videoflix_Backend",
-      "id":"5"
+      "id":"1"
   },
 
 "comment1":   {

@@ -61,6 +61,7 @@ tbody{
     @include d-flex($ai: start, $fd: column);
     width: 568px;
     height: 186px;
+    margin-top: 25px;
 }
 
 .firstRow{
@@ -163,7 +164,7 @@ tbody{
     .myConditions{
         align-items: center;
         flex-direction: column;
-        margin-top: 25px;
+        
     }
 
     .thirdRow{

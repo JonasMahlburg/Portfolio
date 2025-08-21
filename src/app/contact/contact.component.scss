@@ -55,7 +55,7 @@ section {
 
   .contactInfo{
     @include d-flex($ai: flex-start, $fd: column);
-    width: 50%;
+    width: 43%;
 
   .email {
     background-image: url("../../assets/img/contact-img/icon\ _email_.png");
@@ -64,7 +64,7 @@ section {
     width: 379px;
     height: 30px;
     background-size: contain;
-    @include d-flex($js: space-evenly);
+    @include d-flex($js: flex-start, $g: 5px);
   }
 
   .tel {
@@ -75,12 +75,30 @@ section {
     width: 379px;
     height: 33px;
     background-size: contain;
-    @include d-flex($js: space-evenly);
+     @include d-flex($js: flex-start, $g: 5px);
   }
   }
-
-
 }
+.arrowDiv{
+
+  @include d-flex($js: flex-end);
+    .arrowDown {
+      transform: rotate(180deg);
+      width: 22px;
+      height: 50px;
+      position: relative;
+      background-image: url("../../assets/img/Arrow down.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-image: url("../../assets/img/Arrow\ down=Hover.png");
+        height: 60px;
+      }
+    }
+    }
+
 form {
   @include d-flex($g: 30px, $fd: column);
 
@@ -265,6 +283,7 @@ color: red !important;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  @include d-flex();
 }
 
 .popup-content {
@@ -304,6 +323,7 @@ section{
 @media(max-width: 950px){
   section{
     height: 100vh;
+    width: 100%;
   }
 
   .headline{
@@ -341,6 +361,10 @@ section{
   .information{
     flex-direction: column;
     margin-bottom: 15px;
+    .arrowDiv{
+      width: 90%;
+      align-items: flex-end;
+    }
   }
 
   .headline{
@@ -388,7 +412,10 @@ margin-left: 0;
   }
 }
 
-@media(max-width: 580px){
+@media(max-width: 590px){
+  section{
+    width: 100%;
+  }
   .headline{
     width: 100%;
     img{
@@ -397,14 +424,17 @@ margin-left: 0;
   }
   .information{
   .contactInfo{
-    width: 90%;
-  .email{
     width: 100%;
-    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+  .email{
+    width: 63%;
+    justify-content: center;
+
   }
   .tel{
-    width: 100%;
-    padding-left: 0;
+    width: 63%;
+    justify-content: center;
   }
   }
   }
@@ -413,7 +443,18 @@ margin-left: 0;
 
 }
 
-@media(max-width: 420px){
+@media(max-width: 520px){
+  section{
+    padding: 1%;
+    width: 98%;
+  }
+  .contact{
+  width: 98%;
+}
+}
+
+@media(max-width: 450px){
+
   .headline{
     width: 100%;
     .contactText{
@@ -432,10 +473,11 @@ margin-left: 0;
     
     margin-bottom: 30px;
     justify-content: center;
+    background-image: none;
   }
   .tel{
     flex-direction: column;
-    
+    background-image: none;
     margin-bottom: 30px;
     justify-content: center;
 
@@ -472,5 +514,15 @@ margin-left: 0;
       font-size: 35px;
     }
 
+  }
+  .information{
+    .contactInfo{
+      .email{
+        width: 70%;
+      }
+      .tel{
+        width: 70%;
+      }
+    }
   }
 }

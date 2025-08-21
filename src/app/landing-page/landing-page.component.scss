@@ -103,14 +103,16 @@ padding-right: 30px;
 
 //-- Media Querry ------------------------------------------//
 
-@media(max-width: 1215px){
+@media(max-width: 1280px){
   section{
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
   }
   .profilePicture{
     width: 40%;
 
   }
+  
   .myName{
     font-size: 66px;
   }
@@ -119,14 +121,22 @@ padding-right: 30px;
   }
 }
 
+@media(max-width:1050px){
+  .text-Part{
+    .myName{
+      font-size: 58px;
+    }
+  }
+}
+
 @media(max-width: 980px){
   .text-Part{
     gap: 0;
     .jobTitle{
-      font-size: 44px;
+      font-size: 40px;
     }
     .myName{
-      font-size: 60px;
+      font-size: 56px;
     }
   }
 }

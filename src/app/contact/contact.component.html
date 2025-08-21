@@ -1,23 +1,28 @@
 <section>
     <section class="contact">
-        <div class="headline"> 
+        <div class="headline">
             <p class="contactText">{{'contact_section' | translate}}</p>
             <img src="./assets/img/Arrow_contact.png" alt="">
         </div>
         <div class="information">
-                <div class="textPart">
-                    <p>{{'contactInfo' | translate}}</p>
+            <div class="textPart">
+                <p>{{'contactInfo' | translate}}</p>
+            </div>
+            <div class="contactInfo">
+                <div class="email">
+                    Email: <a href="mailto:mail@jonas-mahlburg.de"> mail&#64;jonas-mahlburg.de</a>
                 </div>
-                <div class="contactInfo">
-                    <div class="email">
-                        Email: <a href="mailto:mail@jonas-mahlburg.de">mail&#64;jonas-mahlburg.de</a>
-                    </div>
-                    <div class="tel">
-                        Tel: <a href="tel:+4917646703864">0176 467 038 64</a>
-                    </div>
+                <div class="tel">
+                    Tel: <a href="tel:+4917646703864"> 0176 467 038 64</a>
                 </div>
+            </div>
+            <div class="arrowDiv">
+                <a href="#landingPage" class="arrowDown"></a>
+            </div>
         </div>
     </section>
+
+   
     <div class="container">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="inputArea">

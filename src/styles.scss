@@ -12,18 +12,18 @@ body{
     font-family: 'RobotoMono';
     color: #00f4bf;
     width: 100%;
-    // overflow: hidden;
 }
 
 section {
   max-width: 1200px; 
   margin: 0 auto;
-  // padding: 0 20px;     
+//  padding: 0 20px;     
   width: 100%;
 }
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 92px;
 }
 
 @mixin bigRed($fs: 54px, $fw: 500){
@@ -44,3 +44,5 @@ html{
     font-size: $fs !important;
     font-weight: $fw !important;
   }
+
+  

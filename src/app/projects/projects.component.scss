@@ -23,6 +23,15 @@ section {
     flex-direction: row-reverse;
 }
 // ------------------------Media Query----------------------------
+@media(max-width: 510px){
+  section{
+   padding: 1%;
+   width: 98%;
+  }
+ 
+
+}
+
 @media(max-width: 420px){
  button{
     width: 100px;

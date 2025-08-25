@@ -7,19 +7,18 @@
 }/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 
 body{
-    background-image: linear-gradient(rgba(11,4,45,1), rgba(29,12,123,1));
-    margin: 0;
-    font-family: 'RobotoMono';
-    color: #00f4bf;
-    width: 100%;
-}
-
-section {
-  max-width: 1200px; 
-  margin: 0 auto;
-//  padding: 0 20px;     
-  width: 100%;
-}
+    background-image: linear-gradient(rgba(11, 4, 45, 1), rgba(29, 12, 123, 1));
+      margin: 0;
+      font-family: 'RobotoMono';
+      color: #00f4bf;
+      width: 100%;
+    }
+    
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
 
 html{
     scroll-behavior: smooth;

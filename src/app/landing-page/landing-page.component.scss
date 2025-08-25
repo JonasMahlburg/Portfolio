@@ -79,6 +79,8 @@ section {
   font-weight: 700;
   line-height: 98.4px;
   margin: 0;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .arrowDown {

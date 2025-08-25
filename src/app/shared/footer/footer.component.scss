@@ -133,19 +133,17 @@ height: 30px;
   .footerTop{
     justify-content: space-around;
   }
-  .logoDiv{
-    display: none;
-  }
   .copyright{
     margin-bottom: 8px;
   }
 }
 
 @media(max-width: 610px){
-
-
   .footerTop{
     flex-direction: column;
     padding-bottom: 15px;
+  }
+    .logoDiv{
+    display: none;
   }
 }

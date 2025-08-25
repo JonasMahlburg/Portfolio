@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 section {
   @include d-flex($fd: column);
-  margin-top: 80px;
+
 
   header {
     width: 100%;

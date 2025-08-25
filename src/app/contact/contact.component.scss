@@ -75,7 +75,7 @@ section {
     width: 379px;
     height: 33px;
     background-size: contain;
-     @include d-flex($js: flex-start, $g: 5px);
+     @include d-flex($js: flex-start, $g: 23px);
   }
   }
 }

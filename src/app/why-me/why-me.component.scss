@@ -156,6 +156,13 @@ tbody{
 
 //---------------------Media Query----------------------------
 
+
+  @media(max-height: 600px){
+    section{
+      height: 95vh;
+    }
+  }
+
 @media(max-width: 1250px){
     .myPic{
         width: 30%;

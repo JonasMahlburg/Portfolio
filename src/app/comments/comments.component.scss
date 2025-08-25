@@ -131,6 +131,17 @@ section{
     }
   }
 
+  @media(max-height: 600px){
+    section{
+      .h2{
+        margin-top: 50px;
+      }
+      .commentSection{
+        height: 100vh;
+      }
+    }
+  }
+
 
 @media(max-width: 590px){
   .slideshow-container{

@@ -39,18 +39,49 @@ h2{
     }
 }
 
-.mobileMessage{
-    @include d-flex($fd: column,  $g: 10px);
+.mobileMessage {
+    position: relative; 
+    @include d-flex($fd: column, $g: 10px);
     font-size: 16px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 40px;
+}
 
-    img{
-        cursor: pointer;
-    }
+.mobileMessage img {
+    cursor: pointer;
+}
+
+.mobileMessage .hover-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 60px;
+    transform: translate(-50%, -50%); /* Zentriert den Text perfekt */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Fügt eine sanfte Einblendung hinzu */
+    white-space: nowrap; /* Verhindert Zeilenumbruch bei längeren Texten */
+    pointer-events: none; /* Stellt sicher, dass der Text nicht die Maus blockiert */
+}
+
+.mobileMessage:hover .hover-text {
+    opacity: 1;
 }
 
 //-----------------------------Media Query---------------------
+
+@media(max-height: 850px){
+        section{
+        margin-top: 0;
+        height: 100vh;
+    }
+}  
+
+@media(max-height: 600px) {
+      .skillTree {
+          gap: 0;
+      }
+      
+  }
 
 @media(max-width: 1080px){
     section{
@@ -60,7 +91,6 @@ h2{
 
 @media(max-width: 800px){
     .mobileMessage{
-        margin-top: 0;
         margin-bottom: 90px;
     }
     .skillTree{

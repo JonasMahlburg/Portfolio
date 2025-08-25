@@ -101,6 +101,17 @@ padding-right: 30px;
 
 
 //-- Media Querry ------------------------------------------//
+  @media(max-height: 600px){
+    section{
+      margin-left: 0;
+    }
+    .text-Part{
+      height: unset;
+    }
+    .profilePicture{
+      height: 70%;
+    }
+  }
 
 @media(max-width: 1280px){
   section{

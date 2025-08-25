@@ -21,7 +21,10 @@ section {
   border: 2px solid #00f4bf;
   width: 169px;
   height: 52px;
-  rotate: -90deg;
+    -webkit-transform: rotate(-90deg); /* Für Safari, Chrome */
+  -ms-transform: rotate(-90deg); /* Für Edge */
+  -moz-transform: rotate(-90deg); /* Für Firefox */
+  transform: rotate(-90deg); /* Standard für moderne Browser */
   position: relative;
   right: 58px;
   color: #e15544;

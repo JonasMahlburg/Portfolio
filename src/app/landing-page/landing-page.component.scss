@@ -177,7 +177,7 @@ section{
 }
 .profilePicture{
   width: 50%;
-  height: 50%;
+  height: 30%;
   
 }
 
@@ -193,9 +193,7 @@ section{
 }
 
 @media(max-width: 590px){
-  section{
-    height: 100vh;
-  }
+
   .text-Part{
     justify-content: space-between;
     .myName{

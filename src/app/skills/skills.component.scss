@@ -8,22 +8,22 @@ section{
 
 
 }
-
-h2{
+h2 {
     @include bigRed();
     margin-top: 100px;
 }
 
-.skillTree{
+.skillTree {
     @include d-flex();
     gap: 28px;
     flex-wrap: wrap;
 
-    img{
+    img {
         width: 88px;
-    height: 88px;
+        height: 88px;
     }
-    figcaption{
+
+    figcaption {
         @include d-flex();
     }
 }
@@ -122,15 +122,15 @@ h2{
  }
 }
 
-@media screen and (max-width: 400px) and (orientation: portrait) {
-      section {
-        height: 158vh;
-    }
-}
+// @media screen and (max-width: 400px) and (orientation: portrait) {
+//       section {
+//         height: 158vh;
+//     }
+// }
 
 
-@media(max-width: 370px){
-    section{
-        height: 80vh;
-    }
-}
+// @media(max-width: 370px){
+//     section{
+//         height: 80vh;
+//     }
+// }

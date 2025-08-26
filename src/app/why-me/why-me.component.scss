@@ -157,11 +157,11 @@ tbody{
 //---------------------Media Query----------------------------
 
 
-  @media(max-height: 600px){
-    section{
-      height: 95vh;
-    }
-  }
+//   @media(max-height: 600px){
+//     section{
+//       height: 95vh;
+//     }
+//   }
 
 @media(max-width: 1250px){
     .myPic{
@@ -194,6 +194,7 @@ tbody{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
 }
  .presentation{
     text-align: center;

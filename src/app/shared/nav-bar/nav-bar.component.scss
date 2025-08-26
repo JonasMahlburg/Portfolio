@@ -37,10 +37,27 @@
 }
 
 .logoMobile {
-    width: 92px;
-    height: 92px;
-    opacity: 0.7;
-    object-fit: contain;
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,    // oben sichtbar
+    rgba(0,0,0,1) 60%,   // bis 60% sichtbar
+    rgba(0,0,0,0) 100%   // unten ausgeblendet
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 nav {
@@ -53,10 +70,11 @@ nav {
   width: 100%;
   background: linear-gradient(
     to bottom, 
-    rgba(11, 4, 45, 1),
-    rgba(11, 4, 45, 0.2)
+    rgba(11, 4, 45, 1) 0%,   // ganz oben voll deckend
+    rgba(11, 4, 45, 1) 60%,  // bis ca. 60% noch deckend
+    rgba(11, 4, 45, 0.2) 100% // unten dann leicht durchsichtig
   );
-  z-index: 1000;
+  z-index: 3;
 
   .links{
     @include d-flex()
@@ -72,6 +90,7 @@ nav {
   justify-content: space-between;
   height: 100%;
   box-sizing: border-box;
+
 }
 
 .navigation{

@@ -1,9 +1,10 @@
-.imprint{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
+@import "../../styles.scss";
+
+.imprint {
+    @include d-flex($fd: column);
+    flex: 1;
+    min-height: calc(100vh - 92px - 200px);
+
 }
 
 .contactSection{

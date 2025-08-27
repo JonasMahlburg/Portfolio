@@ -5,5 +5,6 @@ section {
     width: 90%;
     max-width: 1200px;
      min-height: calc(100vh - 92px - 200px);
-     padding: 20px;
+     text-wrap: wrap;
+     padding: 0 1rem;
 }

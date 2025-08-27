@@ -256,20 +256,31 @@ tbody{
 }
 }
 
+@media(max-width: 560px){
+
+    table{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 465px){
+
+    table{
+        margin-top: 50px;
+    }
+}
+
 @media(max-width: 440px){
  
     .thirdArrow{
         display: none;
     }
     table{
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
 
 @media(max-width: 400px){
-    // section{
-    //     height: 100vh;
-    // }
     table{
        margin-top: 80px; 
     }
@@ -283,5 +294,19 @@ tbody{
     padding-left: 54px;
   
   }
+}
 
+@media(max-width: 355px){
+
+    table{
+        margin-top: 110px;
+    }
+}
+
+
+@media(max-width: 325px){
+
+    table{
+        margin-top: 120px;
+    }
 }

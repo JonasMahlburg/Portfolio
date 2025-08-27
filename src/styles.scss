@@ -21,8 +21,11 @@ body{
     }
 
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
     scroll-padding-top: 92px;
+}
+:root {
+  scroll-padding-top: 92px;
 }
 
 @mixin bigRed($fs: 54px, $fw: 500){

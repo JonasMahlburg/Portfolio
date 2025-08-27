@@ -2,6 +2,7 @@
 .Singlecomment {
     width: 297px;
     min-height: 200px; 
+    padding: 10px;
 
     @include d-flex($fd: column);
     color: #00f4bf;
@@ -17,7 +18,6 @@
 
     .comment {
         @include fonts(18px, 400);
-        padding: 10px;
         font-size: 18px;
     }
 }
@@ -25,6 +25,7 @@
 @media(max-width: 330px){
     .Singlecomment{
         width: 250px;
-        min-height: 200px; // Auch hier feste Höhe entfernen
+        min-height: 200px;
+        
     }
 }

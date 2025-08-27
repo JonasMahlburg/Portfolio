@@ -5,7 +5,7 @@
     </header>    
     <main>
    @for (project of visibleProjects; track $index) {
-        <app-single-project [singleProject]="project"></app-single-project>  
+        <app-single-project style="display: flex; justify-content: center;"  [singleProject]="project"></app-single-project>  
    }
     </main>
 </section>

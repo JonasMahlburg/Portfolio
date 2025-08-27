@@ -98,8 +98,8 @@ section {
 @media(max-width: 1300px){
     .singleProject{
         width: 100%;
-        flex-direction: column-reverse !important;
         height: fit-content;
+        @include d-flex($fd: column-reverse !important)
         
     }
 
@@ -108,7 +108,7 @@ section {
     }
 
     img{
-        width: 90%;
+        width: 100%;
     }
 
     .infoSection{
@@ -118,10 +118,7 @@ section {
 }
 
 @media (max-width: 850px) {
-  img {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+
 
   .infoSection{
     .skills{
@@ -139,33 +136,54 @@ section {
     .imageDiv{
         width: 90%;
         img{
-            width: 90%;
-            padding-left: 30px;
+            width: 100%;
+     
         }
     }
 }
 
-@media(max-width: 514px){
-    section{
-        width: 90%;
+@media(max-width: 514px) {
+    section {
+        width: 80%;
         @include d-flex($fd: column);
-  
+
     }
-    .singleProject{
+
+    .singleProject {
         width: 90%;
         gap: 0;
     }
 
-    img{
+    .imageDiv{
+        @include d-flex();
+
+        img {
         width: 100%;
         padding-right: 0;
     }
-      .linkSection{
-    gap: 20px;
-  }
+    }
+
+
+
+    .linkSection {
+        gap: 20px;
+        width: 100%;
+
+        .gitHub{
+            width: 40%;
+        }
+        .play{
+            width: 40%;
+            font-size: 16px !important;
+        }
+    }
 }
 
 @media(max-width:365px){
+  .title{
+    font-size: 42px !important;
+  }
+
   .gitHub{
     width: 40px;
   }
@@ -178,6 +196,8 @@ section {
           .linkSection{
     gap: 20px;
   }
+
+
 
 
 }

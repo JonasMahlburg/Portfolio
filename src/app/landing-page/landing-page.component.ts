@@ -12,4 +12,5 @@ import { SmoothScrollDirective } from '../shared/smooth-scroll.directive';
 })
 export class LandingPageComponent {
   translate = inject(TranslationService);
+
 }

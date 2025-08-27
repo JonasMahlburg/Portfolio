@@ -22,6 +22,5 @@ translate = inject(TranslationService);
         popUpMenu.classList.toggle('show');
       }
     }
-
 }
 

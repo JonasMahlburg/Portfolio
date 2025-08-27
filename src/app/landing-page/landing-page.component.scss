@@ -46,14 +46,15 @@ section {
 }
 
 .text-Part {
- @include d-flex($fd: column, $js: space-evenly);
- height: 556px;
- width: 808px;
- .buttons {
-  @include d-flex($js: space-between);
-  width: 100%;
- 
-}
+  @include d-flex($fd: column, $js: space-evenly);
+  height: 556px;
+  max-width: 808px;
+
+  .buttons {
+    @include d-flex($js: space-between);
+    width: 100%;
+
+  }
 
 .title {
   color: #00f4bf;
@@ -79,7 +80,7 @@ section {
   font-weight: 700;
   line-height: 98.4px;
   margin: 0;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 

@@ -17,9 +17,20 @@ h2 {
     gap: 28px;
     flex-wrap: wrap;
 
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     img {
-        width: 100px;
-        height: 100px;
+        width: 88px;
+        height: 88px;
+        cursor: pointer;
+
+        &:hover{
+            filter: brightness(130%)
+        }
     }
 
     figcaption {
@@ -48,6 +59,9 @@ h2 {
 
 .mobileMessage img {
     cursor: pointer;
+    &:hover{
+        filter: brightness(130%)
+    }
 }
 
 .mobileMessage .hover-text {

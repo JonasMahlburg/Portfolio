@@ -139,6 +139,10 @@ table{
 
 
 @media(max-width: 710px){
+
+    section{
+        margin-top: 0;
+    }
     .skillTree{
         display: none;
     }
@@ -146,6 +150,7 @@ table{
     .skillTreeMobile{
         display: flex;
         padding: 20px;
+        padding-top: 0;
         width: 90%;
     }
 

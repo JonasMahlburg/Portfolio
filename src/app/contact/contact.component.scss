@@ -191,7 +191,7 @@ textarea.invalid-input {
 
 .custom-checkbox {
   position: relative;
-  padding-left: 35px;
+  padding-left: 40px;
   cursor: pointer;
   user-select: none;
   display: flex;
@@ -359,8 +359,8 @@ section{
 
   .contactInfo{
     margin-top: 35px;
-    align-items: center;
-    width: 100%;
+    align-items: center !important;
+    width: 100% !important;
   }
 
   .information{
@@ -407,11 +407,11 @@ margin-left: 0;
     max-width: 100%;
         .email{
       background-image: none;
-      width: 90% !important;
+      width: 90%;
     }
     .tel{
       background-image: none;
-      width: 90% !important;
+      width: 90%;
 
     }
   }
@@ -433,24 +433,50 @@ margin-left: 0;
     }
   }
   .information{
+    .textPart{
+      width: 90%;
+    }
   .contactInfo{
     width: 100%;
     align-items: center;
     justify-content: center;
   .email{
-    width: 63%;
+    width: 50%;
     justify-content: center;
 
   }
   .tel{
-    width: 63%;
+    width: 50%;
     justify-content: center;
   }
   }
   }
+}
+
+@media(max-width: 565px) {
+  .information {
+    margin-bottom: 90px;
+        .textPart{
+      padding-bottom: 15px;
+    }
+      .contactInfo {
+        .email {
+          flex-direction: column;
+          margin-bottom: 30px;
+          justify-content: center;
+          background-image: none;
+        }
   
-
-
+        .tel {
+          flex-direction: column;
+          background-image: none;
+          margin-bottom: 30px;
+          justify-content: center;
+  
+        }
+      }
+    }
+ 
 }
 
 @media(max-width: 520px){
@@ -472,29 +498,6 @@ margin-left: 0;
     }
   }
 
-  
-  .information{
-    .textPart{
-      padding-bottom: 15px;
-    }
-.contactInfo{
-  .email{
-    flex-direction: column;
-    
-    margin-bottom: 30px;
-    justify-content: center;
-    background-image: none;
-  }
-  .tel{
-    flex-direction: column;
-    background-image: none;
-    margin-bottom: 30px;
-    justify-content: center;
-
-  }
-}
-
-  }
   .inputArea{
     margin-top: 50px;
     padding-right: 0;
@@ -527,11 +530,12 @@ margin-left: 0;
   }
   .information{
     .contactInfo{
+      margin-top: 45px;
       .email{
-        width: 70%;
+        width: 90%;
       }
       .tel{
-        width: 70%;
+        width: 90%;
       }
     }
   }

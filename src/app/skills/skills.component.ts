@@ -40,29 +40,10 @@ export class SkillsComponent {
     // { src: './assets/img/skills/Icons Skills-8.png', mobileSrc: './assets/img/skills/Icons Skills-8.png', alt: 'Challenge Me?', category: 'other' },
   ];
 
-  /*
-  ====== HTML für Skills (zum Kopieren in die HTML-Datei) ======
-
-  <!-- Frontend -->
-
-  */
-
   activeFilter: 'all' | 'frontend' | 'backend' = 'all';
 
   get visibleSkills() {
     if (this.activeFilter === 'all') return this.skills;
     return this.skills.filter(skill => skill.category === this.activeFilter);
-  }
-
-  showAll() {
-    this.activeFilter = 'all';
-  }
-
-  showFrontend() {
-    this.activeFilter = 'frontend';
-  }
-
-  showBackend() {
-    this.activeFilter = 'backend';
   }
 }

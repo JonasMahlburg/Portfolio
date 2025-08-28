@@ -21,6 +21,7 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     img {
@@ -40,12 +41,25 @@ h2 {
 
 .skillTreeMobile{
     @include d-flex($d: none);
-    gap: 30px;
+    gap: 28px;
     flex-wrap: wrap;
 
-    .mobileImg{
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    img {
         width: 70px;
         height: 70px;
+        margin: 20px;
+        cursor: pointer;
+
+        &:hover{
+            filter: brightness(130%)
+        }
     }
 }
 
@@ -89,6 +103,14 @@ h2 {
     }
 }  
 
+@media(max-height: 760px) {
+    figure{
+        margin: auto;
+    }
+      
+  }
+
+
 @media(max-height: 600px) {
       .skillTree {
           gap: 0;
@@ -116,6 +138,8 @@ h2 {
 
     .skillTreeMobile{
         display: flex;
+        padding: 20px;
+        width: 90%;
     }
 
     .mobileMessage{
@@ -134,3 +158,7 @@ h2 {
        margin-left: 70px; 
     }
 }
+
+
+
+   

@@ -37,7 +37,7 @@ export class SkillsComponent {
     { src: './assets/img/skills/PostgreSQL.png', mobileSrc: './assets/img/skills/PostgreSQL.png', alt: 'PostgreSQL', category: 'backend' },
     { src: './assets/img/skills/Redis.png', mobileSrc: './assets/img/skills/Redis.png', alt: 'Redis', category: 'backend' },
     { src: './assets/img/skills/SQL.png', mobileSrc: './assets/img/skills/SQL.png', alt: 'SQL', category: 'backend' },
-    // { src: './assets/img/skills/Icons Skills-8.png', mobileSrc: './assets/img/skills/Icons Skills-8.png', alt: 'Challenge Me?', category: 'other' },
+    { src: './assets/img/skills/Swift.png', mobileSrc: './assets/img/skills/Swift.png', alt: 'Swift', category: 'other' },
   ];
 
   activeFilter: 'all' | 'frontend' | 'backend' = 'all';

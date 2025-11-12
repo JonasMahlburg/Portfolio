@@ -28,7 +28,7 @@ export class SkillsComponent {
     { src: './assets/img/skills/Icons Skills-5.png', mobileSrc: './assets/img/skills/CSS-mobile.png', alt: 'CSS', category: 'frontend' },
     { src: './assets/img/skills/Icons Skills-6.png', mobileSrc: './assets/img/skills/API-mobil.png', alt: 'Rest-API', category: 'backend' },
     { src: './assets/img/skills/Icons Skills-7.png', mobileSrc: './assets/img/skills/Git-mobil.png', alt: 'Git', category: 'other' },
-    { src: './assets/img/skills/Icons Skills-9.png', mobileSrc: './assets/img/skills/Firebase-mobile.png', alt: 'Firebase', category: 'backend' },
+    { src: './assets/img/skills/Swift.png', mobileSrc: './assets/img/skills/Swift.png', alt: 'Swift', category: 'other' },
     { src: './assets/img/skills/Python-mobile.png', mobileSrc: './assets/img/skills/Python-mobile.png', alt: 'Python', category: 'backend' },
     { src: './assets/img/skills/Django-mobile.png', mobileSrc: './assets/img/skills/Django-mobile.png', alt: 'Django', category: 'backend' },
     { src: './assets/img/skills/Linux.png', mobileSrc: './assets/img/skills/Linux-mobile.png', alt: 'Linux', category: 'backend' },
@@ -37,7 +37,7 @@ export class SkillsComponent {
     { src: './assets/img/skills/PostgreSQL.png', mobileSrc: './assets/img/skills/PostgreSQL.png', alt: 'PostgreSQL', category: 'backend' },
     { src: './assets/img/skills/Redis.png', mobileSrc: './assets/img/skills/Redis.png', alt: 'Redis', category: 'backend' },
     { src: './assets/img/skills/SQL.png', mobileSrc: './assets/img/skills/SQL.png', alt: 'SQL', category: 'backend' },
-    { src: './assets/img/skills/Swift.png', mobileSrc: './assets/img/skills/Swift.png', alt: 'Swift', category: 'other' },
+
   ];
 
   activeFilter: 'all' | 'frontend' | 'backend' = 'all';

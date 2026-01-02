@@ -71,12 +71,12 @@
       "id":"2"
   },
     "project1":{
-        "image": "./assets/img/app-screens/Restaurant_Finder.png",
-        "name": "Restaurant Finder",
+        "image": "./assets/img/app-screens/My_Journy.png",
+        "name": "My Journy",
         "skills": "Swift | SwiftUI | Swift Data",
-        "description": "A IOS-App to find and share local restaurants",
-        "play": "https://restaurant-finder.jonas-mahlburg.de",
-        "gitHub": "https://github.com/JonasMahlburg/Restaurant_Finder_App",
+        "description": "A IOS-App to track and organize your journys",
+        "play": "/error",
+        "gitHub": "https://github.com/JonasMahlburg/My_Journey",
         "id":"1"
     },
 

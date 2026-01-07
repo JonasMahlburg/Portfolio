@@ -1,7 +1,7 @@
 {
     "whyMe": "Why Me",
     "skills": "Skills",
-    "newestProject": "newest",
+    "newestProject": "Current",
     "projects": "Projects",
     "contact": "CONTACT ME",
     "contact_nav": "Contact",
@@ -24,7 +24,7 @@
     "source": "Source:",
     "submissionSuccess": "Your Mail is on its way",
     "error": "Back",
-
+    "newProjectHead": "Current Project",
 
     "project6":{
         "image":"./assets/img/app-screens/PolloLocco.png",
@@ -74,11 +74,20 @@
     "project1":{
         "image": "./assets/img/app-screens/My_Journy.png",
         "name": "My Journy",
-        "skills": "Swift | SwiftUI | Swift Data",
+        "skills": "Swift | SwiftUI | SwiftData",
         "description": "A IOS-App to track and organize your journys",
         "play": "/error",
         "gitHub": "https://github.com/JonasMahlburg/My_Journey",
         "id":"1"
+    },
+        "project0":{
+        "image": "./assets/img/app-screens/Restaurant_Finder.png",
+        "name": "Restaurant Finder",
+        "skills": "Swift | SwiftUI | SwiftData",
+        "description": "A IOS App to search and rate restaurants",
+        "play": "https://restaurant-finder.jonas-mahlburg.de",
+        "gitHub": "https://github.com/JonasMahlburg/Restaurant_Finder_App",
+        "id":"0"
     },
 
 "comment1":   {

@@ -1,0 +1,26 @@
+@import '../../../styles.scss';
+section {
+  @include d-flex($fd: column);
+
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2 {
+    @include bigRed();
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .projectCorner{
+    border: 3px #00F4BF solid;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}

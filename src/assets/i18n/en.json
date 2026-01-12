@@ -76,7 +76,7 @@
         "name": "My Journy",
         "skills": "Swift | SwiftUI | SwiftData",
         "description": "A IOS-App to track and organize your journys",
-        "play": "/error",
+        "play": "https://my-journey.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/My_Journey",
         "id":"1"
     },

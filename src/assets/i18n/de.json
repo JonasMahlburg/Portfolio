@@ -77,7 +77,7 @@
         "name": "My Journy",
         "skills": "Swift | SwiftUI | SwiftData",
         "description": "Eine IOS App zum tracken und organisieren von Reisen",
-        "play": "/error",
+        "play": "https://my-journey.jonas-mahlburg.de",
         "gitHub": "https://github.com/JonasMahlburg/My_Journey",
         "id":"1"
     },

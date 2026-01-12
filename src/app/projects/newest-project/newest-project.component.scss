@@ -18,9 +18,67 @@ section {
     text-align: center;
   }
 
-  .projectCorner{
+  .project0{
     border: 3px #00F4BF solid;
     border-radius: 10px;
-    padding: 10px;
+    padding: 2%;
+  }
+}
+
+// ------------------------Media Query----------------------------
+@media(max-width: 1300px){
+  .singleProject{
+    @include d-flex();
+  }
+}
+
+@media(max-width: 680px){
+    section {
+            .project0 {
+                padding: 0;
+            }
+        }
+  }
+
+@media(max-height: 600px){
+    section{
+      margin-top: 100px;
+    }
+  }
+
+  @media(max-width: 605px){
+        section {
+            .project0 {
+               @include d-flex();
+               width: 95%;
+               margin: 10px;
+               padding-top: 2%;
+            }
+        }
+  }
+
+    @media(max-width: 525px){
+        section {
+            .project0 {
+               margin: 8px;
+            }
+        }
+  }
+
+      @media(max-width: 518px){
+        section {
+            .project0 {
+               margin: 2px;
+            }
+        }
+  }
+
+@media(max-width: 420px){
+ button{
+    width: 100px;
+ }
+   header{
+    @include d-flex($js: center, $ai: center);
+    text-align: center;
   }
 }
